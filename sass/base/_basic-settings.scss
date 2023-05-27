@@ -1,0 +1,30 @@
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+a,
+img,
+div,
+button,
+svg {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.link {
+    list-style: none;
+    text-decoration: none;
+}

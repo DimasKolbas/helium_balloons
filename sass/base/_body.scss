@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    font-family: var(--text_color), var(--title_font);
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 150%;
+    letter-spacing: 0.15em;
+    color: var(--title_color);
+    text-align: center;
+
+    @media screen and (min-width: 390px) {}
+
+    @media screen and (min-width: 834px) {}
+
+    @media screen and (min-width: 1440px) {
+        font-size: 20px;
+    }
+
+    @media screen and (min-width: 1728px) {
+        font-size: 24px;
+    }
+}

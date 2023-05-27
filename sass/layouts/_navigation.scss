@@ -1,0 +1,29 @@
+.navigation {
+    position: absolute;
+    margin-left: 480px;
+    width: 768px;
+    background: rgba(243, 249, 247, 0.8);
+    border-radius: 8px;
+    // outline: 2px solid tomato;
+
+    &_list {
+        display: flex;
+        padding: 20px 16px;
+    }
+
+    &_list-item {
+        &:not(:first-child) {
+            margin-left: 32px;
+        }
+    }
+
+    &_list-page {
+        font-family: var(--text_font);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.5em;
+        letter-spacing: 0.05em;
+        color: var(--text_color);
+    }
+}
