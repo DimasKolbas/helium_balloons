@@ -36,7 +36,7 @@ body {
   font-size: 16px;
   font-style: normal;
   line-height: 150%;
-  letter-spacing: 0.15em;
+  letter-spacing: 0em;
   color: var(--title_color);
   text-align: center;
 }
@@ -141,20 +141,77 @@ body {
   overflow: hidden;
 }
 
-.header_section {
+.header {
   background: linear-gradient(90deg, #EDF7FE 71.35%, rgba(237, 247, 254, 0.615955) 87.4%, rgba(237, 247, 254, 0.290962) 96.88%, rgba(237, 247, 254, 0) 100%);
   filter: drop-shadow(0px 4px 4px rgba(21, 16, 15, 0.25));
 }
-
-.header_box {
+.header_section {
   padding-top: 32px;
+  width: 1728px;
+  height: 848px;
 }
-
 .header_image {
   position: absolute;
   top: 0;
   left: 0;
   min-width: auto;
+}
+.header_balloon {
+  position: absolute;
+  top: 32px;
+  left: 1368px;
+  width: 280px;
+  height: 282px;
+  background-image: url("/images/index/png/contacts balloon.png");
+}
+.header_contacts-item {
+  font-family: var(--title_font);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+}
+.header_contacts-item_:last-child {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+.header_contacts-second-number {
+  padding: 28px 0 4px 0;
+}
+.header_contacts-svg {
+  padding: 24px 0 18px 0;
+}
+.header_logo {
+  position: absolute;
+  top: 260px;
+  left: 1148px;
+  width: 208px;
+  z-index: 1;
+}
+.header_title-box {
+  position: absolute;
+  top: 372px;
+  left: 980px;
+  padding: 35px 46px;
+  width: 668px;
+  height: 216px;
+  background: linear-gradient(95.97deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  -webkit-backdrop-filter: blur(7.5px);
+          backdrop-filter: blur(7.5px);
+  border-radius: 40px;
+  outline: 1px solid tomato;
+}
+.header_title {
+  font-family: var(--header_font);
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 150%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #563831;
+}
+.header_title-span {
+  font-size: 44px;
 }
 
 .navigation {
@@ -176,7 +233,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.5em;
+  line-height: 100%;
   letter-spacing: 0.05em;
   color: var(--text_color);
 }/*# sourceMappingURL=main.css.map */
