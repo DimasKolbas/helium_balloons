@@ -1,23 +1,26 @@
 .navigation {
     position: absolute;
-    margin-left: 480px;
+    top: 32px;
+    left: 480px;
     width: 768px;
+    height: 60px;
     background: rgba(243, 249, 247, 0.8);
     border-radius: 8px;
     // outline: 2px solid tomato;
 
     &_list {
         display: flex;
-        padding: 20px 16px;
+        justify-content: space-between;
+        padding: 12px 16px;
     }
 
     &_list-item {
-        &:not(:first-child) {
-            margin-left: 32px;
+        &:last-child {
+            margin-top: 4px;
         }
     }
 
-    &_list-page {
+    &_list-link {
         font-family: var(--text_font);
         font-style: normal;
         font-weight: 500;
@@ -25,5 +28,22 @@
         line-height: 100%;
         letter-spacing: 0.05em;
         color: var(--text_color);
+
+        &:hover,
+        :focus {
+            font-weight: 600;
+            border-bottom: 2px dashed var(--second-accent_color);
+        }
+
+        &::after {
+            content: ' ';
+            position: absolute;
+            // border-bottom: 20px;
+            // width: 100%;
+            // height: 2px;
+            // left: 0;
+            // bottom: 15px;
+            background-color: var(--second-accent_color);
+        }
     }
 }
