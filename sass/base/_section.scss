@@ -1,12 +1,14 @@
 .section {
-    width: 100%;
-    padding: 0 20px;
+    width: 390px;
+    padding: 0 28px;
+    // width: 100%;
+    // padding: 0 20px;
     // outline: 2px solid tomato;
 
-    @media screen and (min-width: 390px) {
-        width: 390px;
-        padding: 0 28px;
-    }
+    // @media screen and (min-width: 390px) {
+    //     width: 390px;
+    //     padding: 0 28px;
+    // }
 
     @media screen and (min-width: 834px) {
         width: 834px;

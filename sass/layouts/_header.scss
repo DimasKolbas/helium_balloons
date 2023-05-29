@@ -1,62 +1,137 @@
 .header {
-    // background: linear-gradient(90deg, #EDF7FE 71.35%, rgba(237, 247, 254, 0.615955) 87.4%, rgba(237, 247, 254, 0.290962) 96.88%, rgba(237, 247, 254, 0) 100%);
-    // filter: drop-shadow(0px 4px 4px rgba(21, 16, 15, 0.25));
-
-
     &_section {
-        // padding-top: 32px;
-        // width: 1728px;
-        height: 848px;
+        height: 396px;
         background: linear-gradient(90deg, #EDF7FE 71.35%, rgba(237, 247, 254, 0.615955) 87.4%, rgba(237, 247, 254, 0.290962) 96.88%, rgba(237, 247, 254, 0) 100%);
         filter: drop-shadow(0px 4px 4px rgba(21, 16, 15, 0.25));
+
+        @media screen and (min-width: 834px) {
+            height: 848px;
+        }
+
+        @media screen and (min-width: 1440px) {}
+
+        @media screen and (min-width: 1728px) {}
     }
 
     &_image {
         position: absolute;
         top: 0;
         left: 0;
-        width: 1248px;
-        height: 848px;
-        background-image: url("/images/index/jpg/hero\ image.jpg");
+        width: 390px;
+        height: 396px;
+        background-image: url("/images/index/jpg/header/hero\ image_mobile.jpg");
+
+        @media screen and (min-width: 834px) {
+            width: 834px;
+            height: 848px;
+            background-image: url("/images/index/jpg/header/hero\ image_tablet.jpg");
+        }
+
+        @media screen and (min-width: 1440px) {
+            width: 1030px;
+            background-image: url("/images/index/jpg/header/hero\ image_desktop.jpg");
+        }
+
+        @media screen and (min-width: 1728px) {
+            width: 1248px;
+            background-image: url("/images/index/jpg/header/hero\ image_macbook.jpg");
+        }
     }
 
     &_balloon {
-        position: absolute;
-        top: 32px;
-        left: 1368px;
-        width: 280px;
-        height: 282px;
-        background-image: url("/images/index/png/contacts\ balloon.png");
+        @media screen and (min-width: 834px) {
+            position: absolute;
+            top: 32px;
+            left: 502px;
+            width: 196px;
+            height: 200px;
+            background-image: url("/images/index/png/header/balloon_tablet.png");
+        }
+
+        @media screen and (min-width: 1440px) {
+            left: 1074px;
+            width: 280px;
+            height: 282px;
+            background-image: url("/images/index/png/header/balloon_desktop.png");
+        }
+
+        @media screen and (min-width: 1728px) {
+            left: 1368px;
+            width: 280px;
+            height: 282px;
+        }
     }
 
     &_contacts-item {
-        font-family: var(--title_font);
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 100%;
+        @media screen and (min-width: 834px) {
+            font-family: var(--title_font);
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 100%;
+
+            // height: 52px;
+        }
+
+        @media screen and (min-width: 1440px) {
+            font-size: 20px;
+        }
+
+        @media screen and (min-width: 1728px) {}
     }
 
-    &_contacts-first-number {
-        color: var(--title-color);
-    }
-
-    &_contacts-second-number {
-        padding: 28px 0 4px 0;
-    }
 
     &_contacts-svg {
-        padding: 24px 72px 18px 72px;
+        margin-top: 16px;
+        margin-bottom: 12px;
+        width: 44px;
+        height: 44px;
+        fill: var(--first-accent_color);
 
         &:hover,
         :focus {
             width: 100px;
         }
+
+        @media screen and (min-width: 834px) {}
+
+        @media screen and (min-width: 1440px) {
+            margin-top: 24px;
+            margin-bottom: 18px;
+            width: 52px;
+            height: 52px;
+        }
+
+        @media screen and (min-width: 1728px) {}
+    }
+
+    &_contacts-number--first {
+        color: var(--title-color);
+    }
+
+    &_contacts-number--second {
+        padding: 16px 0 4px 0;
+
+        @media screen and (min-width: 834px) {}
+
+        @media screen and (min-width: 1440px) {}
+
+        @media screen and (min-width: 1728px) {
+            padding: 28px 0 4px 0;
+        }
     }
 
     &_contacts-social {
         font-weight: 400;
-        font-size: 16px;
+        font-size: 12px;
         line-height: 150%;
+
+        @media screen and (min-width: 834px) {}
+
+        @media screen and (min-width: 1440px) {
+            font-size: 16px;
+        }
+
+        @media screen and (min-width: 1728px) {}
     }
 
     &_logo {
@@ -65,6 +140,12 @@
         left: 1148px;
         width: 208px;
         z-index: 1;
+
+        @media screen and (min-width: 834px) {}
+
+        @media screen and (min-width: 1440px) {}
+
+        @media screen and (min-width: 1728px) {}
     }
 
     &_title-box {
@@ -129,6 +210,4 @@
             box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
         }
     }
-
-    &_transition-item {}
 }
