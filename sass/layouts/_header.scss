@@ -19,64 +19,55 @@
         left: 0;
         width: 390px;
         height: 396px;
-        background-image: url("/images/index/jpg/hero_mob.jpg");
-        background-size: cover;
-
-        @media (min-device-pixel-ratio: 2) and (min-width: 834px),
-        (-webkit-min-device-pixel-ratio: 2) and (min-width: 834px),
-        (min-resolution: 192dpi) and (min-width: 834px),
-        (min-resolution: 2dppx) and (min-width: 834px) {
-            background-image: url("/images/index/jpg/hero_mob@2x.jpg");
-        }
 
         @media screen and (min-width: 834px) {
             width: 834px;
             height: 848px;
-            background-image: url("/images/index/jpg/hero_tab.jpg");
-        }
-
-        @media (min-device-pixel-ratio: 2) and (min-width: 834px),
-        (-webkit-min-device-pixel-ratio: 2) and (min-width: 834px),
-        (min-resolution: 192dpi) and (min-width: 834px),
-        (min-resolution: 2dppx) and (min-width: 834px) {
-            background-image: url("/images/index/jpg/hero_tab@2x.jpg");
         }
 
         @media screen and (min-width: 1440px) {
             width: 1030px;
-            background-image: url("/images/index/jpg/hero_desk.jpg");
-        }
-
-        @media (min-device-pixel-ratio: 2) and (min-width: 1440px),
-        (-webkit-min-device-pixel-ratio: 2) and (min-width: 1440px),
-        (min-resolution: 192dpi) and (min-width: 1440px),
-        (min-resolution: 2dppx) and (min-width: 1440px) {
-            background-image: url("/images/index/jpg/hero_desk@2x.jpg");
         }
 
         @media screen and (min-width: 1728px) {
             width: 1248px;
-            background-image: url("/images/index/jpg/hero_mac.jpg");
-        }
-
-        @media (min-device-pixel-ratio: 2) and (min-width: 1728px),
-        (-webkit-min-device-pixel-ratio: 2) and (min-width: 1728px),
-        (min-resolution: 192dpi) and (min-width: 1728px),
-        (min-resolution: 2dppx) and (min-width: 1728px) {
-            background-image: url("/images/index/jpg/hero_mac@2x.jpg");
         }
     }
 
     &_balloon {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        width: 80px;
+        height: 80px;
+        background-image: url("/images/index/png/balloon_mobile.png");
+        background-size: contain;
+
+        @media (min-device-pixel-ratio: 2) and (min-width: 390px),
+        (-webkit-min-device-pixel-ratio: 2) and (min-width: 390px),
+        (min-resolution: 192dpi) and (min-width: 390px),
+        (min-resolution: 2dppx) and (min-width: 390px) {
+            background-image: url("/images/index/png/balloon_mobile@2x.png");
+        }
+
         @media screen and (min-width: 834px) {
-            position: absolute;
-            top: 32px;
-            left: 502px;
-            width: 196px;
-            height: 200px;
+            top: 24px;
+            left: 24px;
+            width: 180px;
+            height: 160px;
+            background-image: url("/images/index/png/balloon_tab.png");
+
+            @media (min-device-pixel-ratio: 2) and (min-width: 834px),
+            (-webkit-min-device-pixel-ratio: 2) and (min-width: 834px),
+            (min-resolution: 192dpi) and (min-width: 834px),
+            (min-resolution: 2dppx) and (min-width: 834px) {
+                background-image: url("/images/index/png/balloon_tab@2x.png");
+            }
         }
 
         @media screen and (min-width: 1440px) {
+            position: absolute;
+            top: 32px;
             left: 1074px;
             width: 280px;
             height: 282px;
@@ -92,8 +83,6 @@
 
         @media screen and (min-width: 1728px) {
             left: 1368px;
-            width: 280px;
-            height: 282px;
         }
     }
 
@@ -134,7 +123,6 @@
             margin-bottom: 18px;
             width: 52px;
             height: 52px;
-            background-image: url("/images/index/png/logo_tab.png");
         }
 
         @media screen and (min-width: 1728px) {}

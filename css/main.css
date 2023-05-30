@@ -144,59 +144,55 @@ body {
   left: 0;
   width: 390px;
   height: 396px;
-  background-image: url("/images/index/jpg/hero_mob.jpg");
-  background-size: cover;
-}
-@media (min-device-pixel-ratio: 2) and (min-width: 834px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 834px), (min-resolution: 192dpi) and (min-width: 834px), (min-resolution: 2dppx) and (min-width: 834px) {
-  .header_image {
-    background-image: url("/images/index/jpg/hero_mob@2x.jpg");
-  }
 }
 @media screen and (min-width: 834px) {
   .header_image {
     width: 834px;
     height: 848px;
-    background-image: url("/images/index/jpg/hero_tab.jpg");
-  }
-}
-@media (min-device-pixel-ratio: 2) and (min-width: 834px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 834px), (min-resolution: 192dpi) and (min-width: 834px), (min-resolution: 2dppx) and (min-width: 834px) {
-  .header_image {
-    background-image: url("/images/index/jpg/hero_tab@2x.jpg");
   }
 }
 @media screen and (min-width: 1440px) {
   .header_image {
     width: 1030px;
-    background-image: url("/images/index/jpg/hero_desk.jpg");
-  }
-}
-@media (min-device-pixel-ratio: 2) and (min-width: 1440px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 1440px), (min-resolution: 192dpi) and (min-width: 1440px), (min-resolution: 2dppx) and (min-width: 1440px) {
-  .header_image {
-    background-image: url("/images/index/jpg/hero_desk@2x.jpg");
   }
 }
 @media screen and (min-width: 1728px) {
   .header_image {
     width: 1248px;
-    background-image: url("/images/index/jpg/hero_mac.jpg");
   }
 }
-@media (min-device-pixel-ratio: 2) and (min-width: 1728px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 1728px), (min-resolution: 192dpi) and (min-width: 1728px), (min-resolution: 2dppx) and (min-width: 1728px) {
-  .header_image {
-    background-image: url("/images/index/jpg/hero_mac@2x.jpg");
+.header_balloon {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 80px;
+  height: 80px;
+  background-image: url("/images/index/png/balloon_mobile.png");
+  background-size: contain;
+}
+@media (min-device-pixel-ratio: 2) and (min-width: 390px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 390px), (min-resolution: 192dpi) and (min-width: 390px), (min-resolution: 2dppx) and (min-width: 390px) {
+  .header_balloon {
+    background-image: url("/images/index/png/balloon_mobile@2x.png");
   }
 }
 @media screen and (min-width: 834px) {
   .header_balloon {
-    position: absolute;
-    top: 32px;
-    left: 502px;
-    width: 196px;
-    height: 200px;
+    top: 24px;
+    left: 24px;
+    width: 180px;
+    height: 160px;
+    background-image: url("/images/index/png/balloon_tab.png");
+  }
+}
+@media screen and (min-width: 834px) and (min-device-pixel-ratio: 2) and (min-width: 834px), screen and (min-width: 834px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 834px), screen and (min-width: 834px) and (min-resolution: 192dpi) and (min-width: 834px), screen and (min-width: 834px) and (min-resolution: 2dppx) and (min-width: 834px) {
+  .header_balloon {
+    background-image: url("/images/index/png/balloon_tab@2x.png");
   }
 }
 @media screen and (min-width: 1440px) {
   .header_balloon {
+    position: absolute;
+    top: 32px;
     left: 1074px;
     width: 280px;
     height: 282px;
@@ -211,8 +207,6 @@ body {
 @media screen and (min-width: 1728px) {
   .header_balloon {
     left: 1368px;
-    width: 280px;
-    height: 282px;
   }
 }
 @media screen and (min-width: 834px) {
@@ -245,7 +239,6 @@ body {
     margin-bottom: 18px;
     width: 52px;
     height: 52px;
-    background-image: url("/images/index/png/logo_tab.png");
   }
 }
 .header_contacts-number--first {
