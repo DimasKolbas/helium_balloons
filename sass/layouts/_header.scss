@@ -7,10 +7,6 @@
         @media screen and (min-width: 834px) {
             height: 848px;
         }
-
-        @media screen and (min-width: 1440px) {}
-
-        @media screen and (min-width: 1728px) {}
     }
 
     &_image {
@@ -92,31 +88,27 @@
             font-weight: 700;
             font-size: 16px;
             line-height: 100%;
-
-            // height: 52px;
         }
 
         @media screen and (min-width: 1440px) {
             font-size: 20px;
         }
-
-        @media screen and (min-width: 1728px) {}
     }
 
 
-    &_contacts-svg {
+    &_contacts-icon {
         margin-top: 16px;
         margin-bottom: 12px;
         width: 44px;
         height: 44px;
         fill: var(--first-accent_color);
+        fill-opacity: 0.6;
 
         &:hover,
         :focus {
-            width: 100px;
+            width: 48px;
+            fill-opacity: 1;
         }
-
-        @media screen and (min-width: 834px) {}
 
         @media screen and (min-width: 1440px) {
             margin-top: 24px;
@@ -124,18 +116,29 @@
             width: 52px;
             height: 52px;
         }
-
-        @media screen and (min-width: 1728px) {}
     }
 
     &_contacts-number--first {
-        color: var(--title-color);
+        display: none;
+
+        @media screen and (min-width: 834px) {
+            display: block;
+            color: var(--title-color);
+
+            &:hover,
+            :focus {
+                color: var(--first-accent_color);
+            }
+        }
     }
 
     &_contacts-number--second {
-        padding: 16px 0 4px 0;
+        display: none;
 
-        @media screen and (min-width: 834px) {}
+        @media screen and (min-width: 834px) {
+            display: block;
+            padding: 16px 0 4px 0;
+        }
 
         @media screen and (min-width: 1440px) {}
 
@@ -145,17 +148,18 @@
     }
 
     &_contacts-social {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 150%;
+        display: none;
 
-        @media screen and (min-width: 834px) {}
+        @media screen and (min-width: 834px) {
+            display: block;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 150%;
+        }
 
         @media screen and (min-width: 1440px) {
             font-size: 16px;
         }
-
-        @media screen and (min-width: 1728px) {}
     }
 
     &_logo {
@@ -186,28 +190,28 @@
 
     &_title-box {
         position: absolute;
-        top: 212px;
+        top: 236px;
         left: 28px;
         width: 334px;
         height: 96px;
         padding: 12px 21px;
-        background: linear-gradient(95.97deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
-        backdrop-filter: blur(7.5px);
+        background: rgba(255, 255, 255, 0.6);
         border-radius: 20px;
-        outline: 1px solid tomato;
 
         @media screen and (min-width: 834px) {
-            top: 444px;
+            top: 512px;
             left: 83px;
             width: 668px;
             height: 216px;
             padding: 35px 42px;
-            border-radius: 20px;
+            border-radius: 40px;
         }
 
         @media screen and (min-width: 1440px) {
             top: 372px;
             left: 686px;
+            background: linear-gradient(95.97deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+            backdrop-filter: blur(7.5px);
         }
 
         @media screen and (min-width: 1728px) {
@@ -228,10 +232,6 @@
         @media screen and (min-width: 834px) {
             font-size: 56px;
         }
-
-        @media screen and (min-width: 1440px) {}
-
-        @media screen and (min-width: 1728px) {}
     }
 
     &_title-text {
@@ -241,37 +241,68 @@
         @media screen and (min-width: 834px) {
             font-size: 44px;
         }
-
-        @media screen and (min-width: 1440px) {}
-
-        @media screen and (min-width: 1728px) {}
     }
 
     &_delivery {
         position: absolute;
-        top: 600px;
-        left: 1471px;
+        top: 312px;
+        left: 235px;
         font-family: var(--secondary_font);
         font-style: italic;
-        letter-spacing: 0.05em;
+        font-size: 18px;
+        line-height: 100%;
         text-transform: lowercase;
         color: var(--text_color);
-        transform: rotate(-15deg);
+
+        @media screen and (min-width: 834px) {
+            top: 684px;
+            left: 529px;
+            font-size: 32px;
+        }
+
+        @media screen and (min-width: 1440px) {
+            top: 600px;
+            left: 1177px;
+            font-size: 24px;
+            line-height: 150%;
+            letter-spacing: 0.05em;
+            transform: rotate(-15deg);
+        }
+
+        @media screen and (min-width: 1728px) {
+            left: 1468px;
+        }
     }
 
     &_transition {
+        position: absolute;
+        top: 360px;
+        left: 45px;
+        width: 300px;
         display: flex;
         justify-content: space-between;
-        position: absolute;
-        top: 803px;
-        left: 1360px;
-        width: 288px;
-        height: 6px;
+
+        @media screen and (min-width: 834px) {
+            top: 800px;
+            left: 267px;
+        }
+
+        @media screen and (min-width: 1440px) {
+            top: 803px;
+            left: 1131px;
+            width: 209px;
+        }
+
+        @media screen and (min-width: 1728px) {
+            top: 802px;
+            left: 1360px;
+            width: 288px;
+        }
     }
 
     &_transition-list {
         width: 60px;
-        height: 6px;
+        height: 8px;
         background-color: var(--second-accent_color);
         border-radius: 4px;
 
@@ -279,6 +310,15 @@
         :focus {
             background-color: var(--first-accent_color);
             box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+        }
+
+        @media screen and (min-width: 1440px) {
+            width: 40px;
+            height: 6px;
+        }
+
+        @media screen and (min-width: 1728px) {
+            width: 60px;
         }
     }
 }
