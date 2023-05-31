@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   scroll-behavior: smooth;
 }
@@ -222,6 +223,11 @@ body {
     font-size: 20px;
   }
 }
+.header_contacts-button {
+  border-color: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
 .header_contacts-icon {
   margin-top: 16px;
   margin-bottom: 12px;
@@ -434,26 +440,43 @@ body {
   }
 }
 .header_transition-list {
+  display: contents;
+}
+.header_transition-link {
   width: 60px;
   height: 8px;
   background-color: var(--second-accent_color);
+  border: 1px solid white;
   border-radius: 4px;
 }
-.header_transition-list:hover,
-.header_transition-list :focus {
+.header_transition-link:hover,
+.header_transition-link :focus {
   background-color: var(--first-accent_color);
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
 }
 @media screen and (min-width: 1440px) {
-  .header_transition-list {
+  .header_transition-link {
     width: 40px;
     height: 6px;
   }
 }
 @media screen and (min-width: 1728px) {
-  .header_transition-list {
+  .header_transition-link {
     width: 60px;
   }
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  /* Добавляем ширину контейнера для карусели */
+}
+
+.carousel img {
+  width: 25%;
+  /* Равномерно распределяем ширину изображений в карусели */
+  height: auto;
+  transition: transform 0.5s ease-in-out;
 }
 
 @media screen and (min-width: 1440px) {

@@ -22,22 +22,30 @@
     <header class="header">
         <div class="header_section container">
 
-            <picture class="header_image">
-                <source srcset="/images/index/webp/hero_mac.webp, /images/index/webp/hero_mac@2x.webp 2x" media="(min-width: 1728px)" type="image/webp">   
-                <source srcset="/images/index/jpg/hero_mac.jpg, /images/index/jpg/hero_mac@2x.jpg 2x" media="(min-width: 1728px)">
-                
-                <source srcset="/images/index/webp/hero_desk.webp 1x, /images/index/webp/hero_desk@2x.webp 2x" media="(min-width: 1440px)" type="image/webp">   
-                <source srcset="/images/index/jpg/hero_desk.jpg, /images/index/jpg/hero_desk@2x.jpg 2x" media="(min-width: 1440px)">
-
-                <source srcset="/images/index/webp/hero_tab.webp 1x, /images/index/webp/hero_tab@2x.webp 2x" media="(min-width: 834px)" type="image/webp">   
-                <source srcset="/images/index/jpg/hero_tab.jpg 1x, /images/index/jpg/hero_tab@2x.jpg 2x" media="(min-width: 834px)">
-                
-                <source srcset="/images/index/webp/hero_mob.webp 1x, /images/index/webp/hero_mob@2x.webp 2x" media="(min-width: 390px)" type="image/webp">   
-                <source srcset="/images/index/jpg/hero_mob.jpg 1x, /images/index/jpg/hero_mob@2x.jpg 2x" media="(min-width: 390px)">
-
-                <img src="/images/index/jpg/hero_mob.jpg" alt="Логотип компанії">
-            </picture>
+            <div class="header_image carousel">
+                <img src="/images/index/jpg/hero_mac@2x.jpg" alt="Image 1" id="photo1">
+                <img src="/images/index/jpg/hero2_mac@2x.jpg" alt="Image 2" id="photo2">
+                <img src="/images/index/jpg/hero3_mac@2x.jpg" alt="Image 3" id="photo3">
+                <img src="/images/index/jpg/hero4_mac@2x.jpg" alt="Image 4" id="photo4">
+            </div>
             
+            <div class="header_transition">
+                <ul class="header_transition-list link">
+                    <li>
+                        <button class="header_transition-link" id="btn1"></button>
+                    </li>
+                    <li>
+                        <button class="header_transition-link" id="btn2"></button>
+                    </li>
+                    <li>
+                        <button class="header_transition-link" id="btn3"></button>
+                    </li>
+                    <li>
+                        <button class="header_transition-link" id="btn4"></button>
+                    </li>
+                </ul>
+            </div>
+
             <nav class="navigation">
                 <ul class="navigation_list">
                     <li class="navigation_list-item link">
@@ -53,11 +61,11 @@
                         <a class="navigation_list-link link" href=""">Контакти</a>
                     </li>
                     <li class="navigation_list-item link">
-                        <!-- <a href=""> -->
+                        <a href="">
                             <svg class="navigation_list-icon">
-                            <use href="/images/index/svg/symbol-defs.svg#icon-question"></use>
+                                <use href="/images/index/svg/symbol-defs.svg#icon-question"></use>
                             </svg>
-                        <!-- </a> -->
+                        </a>
                     </li>
                 </ul>
 
@@ -71,16 +79,14 @@
             <div class="header_balloon">
                 <ul class="header_contacts">
                     <li class="header_contacts-item link">
-                        <!-- <a href=""> -->
-                            <svg class="header_contacts-icon">
-                                <use href="/images/index/svg/symbol-defs.svg#icon-phone"></use>
-                            </svg>
-                        <!-- </a> -->
+                            <button class="header_contacts-button" id="callBtn">
+                                <svg class="header_contacts-icon">
+                                    <use href="/images/index/svg/symbol-defs.svg#icon-phone"></use>
+                                </svg>
+                            </button>
                     </li>
                     <li class="header_contacts-item link">
-                        <a class="header_contacts-item header_contacts-number--first link" href="">
                             <p class="header_contacts-number--first">+38 095 714 33 50</p>
-                        </a>
                     </li>
                     <li class="header_contacts-item link">
                         <p class="header_contacts-number--second">+38 066 389 34 33</p>                    
@@ -104,7 +110,7 @@
                 <source srcset="/images/index/webp/logo_mob.webp 1x, /images/index/webp/logo_mob@2x.webp 2x" media="(min-width: 390px)" type="image/webp">   
                 <source srcset="/images/index/png/logo_mob.png 1x, /images/index/png/logo_mob@2x.png 2x" media="(min-width: 390px)">
 
-                <img src="#" alt="Логотип компанії">
+                <img src="/images/index/png/logo_mob.png" alt="Логотип компанії">
             </picture>
 
 
@@ -115,33 +121,13 @@
 
             <p class="header_delivery">Доставка по місту</p>
 
-            <ul class="header_transition">
-                <a href="">
-                    <li class="header_transition-list link">
-                        <div class="header_transition-item"></div>
-                    </li>
-                </a>
-                <a href="">
-                    <li class="header_transition-list link">
-                        <div class="header_transition-item"></div>
-                    </li>
-                </a>
-                <a href="">
-                    <li class="header_transition-list link">
-                        <div class="header_transition-item"></div>
-                    </li>
-                </a>
-                <a href="">
-                    <li class="header_transition-list link">
-                        <div class="header_transition-item"></div>
-                    </li>
-                </a>
-            </ul>
         </div>        
     </header>
 
     <main>
     </main>
     
+    <script src="/js/carousel.js"></script>
+    <script src="/js/call.js"></script>
 </body>
 </html>
