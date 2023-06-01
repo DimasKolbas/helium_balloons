@@ -1,0 +1,12 @@
+@charset "UTF-8";
+.carousel {
+  display: flex;
+  overflow: hidden;
+  /* Добавляем ширину контейнера для карусели */
+}
+.carousel_carousel img {
+  width: 25%;
+  /* Равномерно распределяем ширину изображений в карусели */
+  height: auto;
+  transition: transform 0.5s ease-in-out;
+}/*# sourceMappingURL=carousel.css.map */

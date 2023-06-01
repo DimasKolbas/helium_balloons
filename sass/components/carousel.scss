@@ -1,0 +1,14 @@
+.carousel {
+    display: flex;
+    overflow: hidden;
+    // width: 100%;
+    /* Добавляем ширину контейнера для карусели */
+
+
+    &_carousel img {
+        width: 25%;
+        /* Равномерно распределяем ширину изображений в карусели */
+        height: auto;
+        transition: transform 0.5s ease-in-out;
+    }
+}

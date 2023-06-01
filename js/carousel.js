@@ -35,6 +35,18 @@ function showImage(index) {
     }
 
     currentIndex = index;
+    updateButtonColor(index);
+}
+
+function updateButtonColor(index) {
+    const buttons = [btn1, btn2, btn3, btn4];
+    for (let i = 0; i < buttons.length; i++) {
+        if (i === index) {
+            buttons[i].classList.add('active'); // Добавляем класс "active" к активной кнопке
+        } else {
+            buttons[i].classList.remove('active'); // Удаляем класс "active" у остальных кнопок
+        }
+    }
 }
 
 function nextImage() {
@@ -43,7 +55,7 @@ function nextImage() {
 }
 
 function startInterval() {
-    intervalId = setInterval(nextImage, 4000); // Прокручивать изображения каждые 2 секунды (можно изменить интервал по своему усмотрению)
+    intervalId = setInterval(nextImage, 4000); // Прокручивать изображения каждые 4 секунды (можно изменить интервал по своему усмотрению)
 }
 
 function resetInterval() {

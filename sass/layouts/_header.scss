@@ -30,6 +30,64 @@
         }
     }
 
+    &_transition {
+        position: absolute;
+        top: 360px;
+        left: 45px;
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (min-width: 834px) {
+            top: 800px;
+            left: 267px;
+        }
+
+        @media screen and (min-width: 1440px) {
+            top: 803px;
+            left: 1131px;
+            width: 209px;
+        }
+
+        @media screen and (min-width: 1728px) {
+            top: 802px;
+            left: 1360px;
+            width: 288px;
+        }
+    }
+
+    &_transition-list {
+        display: contents;
+    }
+
+    &_transition-link {
+        width: 60px;
+        height: 8px;
+        background-color: var(--second-accent_color);
+        border: 1px solid white;
+        border-radius: 4px;
+
+        &:hover,
+        :focus {
+            background-color: var(--first-accent_color);
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+        }
+
+        &.active {
+            background-color: var(--first-accent_color);
+            /* Цвет активной кнопки */
+        }
+
+        @media screen and (min-width: 1440px) {
+            width: 40px;
+            height: 6px;
+        }
+
+        @media screen and (min-width: 1728px) {
+            width: 60px;
+        }
+    }
+
     &_balloon {
         position: absolute;
         top: 16px;
@@ -279,73 +337,4 @@
             left: 1468px;
         }
     }
-
-
-
-    &_transition {
-        position: absolute;
-        top: 360px;
-        left: 45px;
-        width: 300px;
-        display: flex;
-        justify-content: space-between;
-
-        @media screen and (min-width: 834px) {
-            top: 800px;
-            left: 267px;
-        }
-
-        @media screen and (min-width: 1440px) {
-            top: 803px;
-            left: 1131px;
-            width: 209px;
-        }
-
-        @media screen and (min-width: 1728px) {
-            top: 802px;
-            left: 1360px;
-            width: 288px;
-        }
-    }
-
-    &_transition-list {
-        display: contents;
-    }
-
-    &_transition-link {
-        width: 60px;
-        height: 8px;
-        background-color: var(--second-accent_color);
-        border: 1px solid white;
-        border-radius: 4px;
-
-        &:hover,
-        :focus {
-            background-color: var(--first-accent_color);
-            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
-        }
-
-        @media screen and (min-width: 1440px) {
-            width: 40px;
-            height: 6px;
-        }
-
-        @media screen and (min-width: 1728px) {
-            width: 60px;
-        }
-    }
-}
-
-.carousel {
-    display: flex;
-    overflow: hidden;
-    // width: 100%;
-    /* Добавляем ширину контейнера для карусели */
-}
-
-.carousel img {
-    width: 25%;
-    /* Равномерно распределяем ширину изображений в карусели */
-    height: auto;
-    transition: transform 0.5s ease-in-out;
 }
