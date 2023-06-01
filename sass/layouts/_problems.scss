@@ -1,0 +1,35 @@
+.problems-section {
+    outline: 1px solid rgb(79, 216, 108);
+}
+
+.problems {
+    // outline: 1px solid tomato;
+
+    &__list {
+        outline: 1px solid tomato;
+    }
+
+    &__list-item {}
+
+    &__list-balloon--1 {
+        position: absolute;
+        top: 892px;
+        left: 300px;
+        width: 444px;
+        height: 592px;
+        background-image: url("/images/index/png/balloon-negative_mac.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    &__list-balloon--2 {
+        position: absolute;
+        top: 892px;
+        left: 984px;
+        width: 444px;
+        height: 592px;
+        background-image: url("/images/index/png/balloon-negative_mac.png");
+    }
+
+    &__list-text {}
+}

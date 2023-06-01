@@ -1,0 +1,9 @@
+.problems__list-balloon {
+  position: absolute;
+  width: 444px;
+  height: 592px;
+  left: 300px;
+  top: 892px;
+  background-image: url("/images/index/png/balloon_mobile.png");
+  background-size: contain;
+}/*# sourceMappingURL=problems.css.map */

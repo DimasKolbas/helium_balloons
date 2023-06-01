@@ -589,4 +589,30 @@ body {
   /* Равномерно распределяем ширину изображений в карусели */
   height: auto;
   transition: transform 0.5s ease-in-out;
+}
+
+.problems-section {
+  outline: 1px solid rgb(79, 216, 108);
+}
+
+.problems__list {
+  outline: 1px solid tomato;
+}
+.problems__list-balloon--1 {
+  position: absolute;
+  top: 892px;
+  left: 300px;
+  width: 444px;
+  height: 592px;
+  background-image: url("/images/index/png/balloon-negative_mac.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.problems__list-balloon--2 {
+  position: absolute;
+  top: 892px;
+  left: 984px;
+  width: 444px;
+  height: 592px;
+  background-image: url("/images/index/png/balloon-negative_mac.png");
 }/*# sourceMappingURL=main.css.map */
