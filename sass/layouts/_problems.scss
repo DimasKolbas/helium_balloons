@@ -27,19 +27,23 @@
         }
 
         @media screen and (min-width: 834px) {
-            &:nth-child(odd, even) {
+            &:nth-child(odd) {
+                transform: none;
+            }
+
+            &:nth-child(even) {
                 transform: none;
             }
         }
 
         & p {
-            // font-family: var(--text_font);
-            // font-weight: 600;
-            // font-size: 20px;
-            // line-height: 200%;
-            // text-align: center;
-            // letter-spacing: 0.1em;
-            // color: var(--text_color);
+            font-family: var(--text_font);
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 200%;
+            text-align: center;
+            letter-spacing: 0.1em;
+            color: var(--text_color);
 
             @media screen and (min-width: 834px) {}
 
@@ -70,105 +74,129 @@
             }
         }
 
-        //     &__list-item p {
-        //         font-family: var(--text_font);
-        //         font-weight: 600;
-        //         font-size: 20px;
-        //         line-height: 200%;
-        //         text-align: center;
-        //         letter-spacing: 0.1em;
-        //         color: var(--text_color);
+        &__list-item p {
+            font-family: var(--text_font);
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 200%;
+            text-align: center;
+            letter-spacing: 0.1em;
+            color: var(--text_color);
 
-        //         @media screen and (min-width: 834px) {}
+            @media screen and (min-width: 834px) {}
 
-        //         @media screen and (min-width: 1440px) {}
+            @media screen and (min-width: 1440px) {}
 
-        //         @media screen and (min-width: 1728px) {}
-        //     }
-        // }
+            @media screen and (min-width: 1728px) {}
+        }
+    }
 
-        &__list-balloon--1 {
-            margin-left: 15px;
+    &__list-balloon--1 {
+        margin-left: 15px;
 
-            @media screen and (min-width: 834px) {
-                margin-left: 132px;
-            }
-
-            @media screen and (min-width: 1440px) {
-                margin-left: 252px;
-            }
-
-            @media screen and (min-width: 1728px) {
-                margin-left: 300px;
-            }
+        @media screen and (min-width: 834px) {
+            margin-left: 132px;
         }
 
-        &__list-balloon--2 {
-
-            @media screen and (min-width: 834px) {
-                margin-left: 450px;
-            }
-
-            @media screen and (min-width: 1440px) {
-                margin-left: 828px;
-            }
-
-            @media screen and (min-width: 1728px) {
-                margin-left: 984px;
-                display: none;
-            }
+        @media screen and (min-width: 1440px) {
+            margin-left: 252px;
         }
 
-        &__list-balloon--3 {
+        @media screen and (min-width: 1728px) {
+            margin-left: 300px;
+        }
+    }
+
+    &__list-balloon--2 {
+        display: none;
+
+        @media screen and (min-width: 834px) {
+            display: block;
+            margin-left: 450px;
+        }
+
+        @media screen and (min-width: 1440px) {
+            margin-left: 828px;
+        }
+
+        @media screen and (min-width: 1728px) {
+            margin-left: 984px;
+        }
+    }
+
+    &__list-balloon--3 {
+        margin-top: 252px;
+        margin-left: 146px;
+
+        @media screen and (min-width: 834px) {
+            margin-top: 372px;
+            margin-left: 40px;
+        }
+
+        @media screen and (min-width: 1440px) {
+            margin-top: 488px;
+            margin-left: 194px;
+        }
+
+        @media screen and (min-width: 1728px) {
             margin-top: 624px;
             margin-left: 213px;
+        }
+    }
 
-            @media screen and (min-width: 834px) {}
+    &__list-balloon--4 {
 
-            @media screen and (min-width: 1440px) {}
-
-            @media screen and (min-width: 1728px) {}
+        @media screen and (min-width: 834px) {
+            margin-top: 284px;
+            margin-left: 291px;
         }
 
-        &__list-balloon--4 {
+        @media screen and (min-width: 1440px) {
+            margin-top: 360px;
+            margin-left: 560px;
+        }
+
+        @media screen and (min-width: 1728px) {
             margin-top: 416px;
             margin-left: 642px;
+        }
+    }
 
-            @media screen and (min-width: 834px) {}
+    &__list-balloon--5 {
 
-            @media screen and (min-width: 1440px) {}
-
-            @media screen and (min-width: 1728px) {}
+        @media screen and (min-width: 834px) {
+            margin-top: 372px;
+            margin-left: 542px;
         }
 
-        &__list-balloon--5 {
+        @media screen and (min-width: 1440px) {
+            margin-top: 488px;
+            margin-left: 926px;
+        }
+
+        @media screen and (min-width: 1728px) {
             margin-top: 624px;
             margin-left: 1071px;
-
-            @media screen and (min-width: 834px) {}
-
-            @media screen and (min-width: 1440px) {}
-
-            @media screen and (min-width: 1728px) {}
         }
-
-        // &__list-text {
-        //     font-family: var(--text_font);
-        //     font-weight: 600;
-        //     font-size: 20px;
-        //     line-height: 200%;
-        //     text-align: center;
-        //     letter-spacing: 0.1em;
-        //     color: var(--text_color);
-
-        //     @media screen and (min-width: 834px) {}
-
-        //     @media screen and (min-width: 1440px) {}
-
-        //     @media screen and (min-width: 1728px) {}
-        // }
     }
+
+    // &__list-text {
+    //     font-family: var(--text_font);
+    //     font-weight: 600;
+    //     font-size: 20px;
+    //     line-height: 200%;
+    //     text-align: center;
+    //     letter-spacing: 0.1em;
+    //     color: var(--text_color);
+
+    //     @media screen and (min-width: 834px) {}
+
+    //     @media screen and (min-width: 1440px) {}
+
+    //     @media screen and (min-width: 1728px) {}
+    // }
 }
+
 
 .balloon-negative {
     padding: 144px 82px 0px 82px;
