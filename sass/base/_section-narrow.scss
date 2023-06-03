@@ -1,0 +1,29 @@
+// Узкая секция
+.section-narrow {
+    padding: 0 auto;
+    margin-top: 108px;
+    outline: 2px solid tomato;
+
+    @media screen and (min-width: 390px) {
+        width: 390px;
+        padding: 0 28px;
+    }
+
+    @media screen and (min-width: 834px) {
+        width: 834px;
+        padding: 0 40px;
+        margin-top: 120px;
+    }
+
+    @media screen and (min-width: 1440px) {
+        width: 1440px;
+        padding: 0 194px;
+        margin-top: 140px;
+    }
+
+    @media screen and (min-width: 1728px) {
+        width: 1728px;
+        padding: 0 213px;
+        margin-top: 160px;
+    }
+}

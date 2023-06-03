@@ -52,6 +52,7 @@
             :focus {
                 font-weight: 600;
                 border-bottom: 2px dashed var(--second-accent_color);
+                transition: border-color 250ms linear;
             }
         }
 
@@ -70,6 +71,7 @@
             &:hover,
             :focus {
                 fill-opacity: 1;
+                transition: fill-opacity 250ms linear;
             }
         }
 

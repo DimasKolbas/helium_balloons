@@ -1,13 +1,12 @@
+// Размеры контейнера
 .container {
-    width: 390px;
-    // width: 100%;
+    width: 100%;
     margin: 0 auto;
-    // align-items: center;
-    // outline: 2px solid tomato;
+    // outline: 2px solid rgb(37, 34, 209);
 
-    // @media screen and (min-width: 390px) {
-    //     width: 390px;
-    // }
+    @media screen and (min-width: 390px) {
+        width: 390px;
+    }
 
     @media screen and (min-width: 834px) {
         width: 834px;

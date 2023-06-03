@@ -172,6 +172,7 @@
         :focus {
             width: 48px;
             fill-opacity: 1;
+            transition: fill-opacity 500ms linear;
         }
 
         @media screen and (min-width: 1440px) {
@@ -192,6 +193,7 @@
             &:hover,
             :focus {
                 color: var(--first-accent_color);
+                transition: color 250ms linear;
             }
         }
     }
