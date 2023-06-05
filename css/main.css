@@ -643,7 +643,8 @@ body {
 }
 
 .problems {
-  height: 1104px;
+  margin-top: 20px;
+  height: 1139px;
 }
 @media screen and (min-width: 834px) {
   .problems {
@@ -663,12 +664,6 @@ body {
     height: 1216px;
   }
 }
-.problems__list-item:nth-child(odd) {
-  transform: rotate(16deg);
-}
-.problems__list-item:nth-child(even) {
-  transform: rotate(-32deg);
-}
 @media screen and (min-width: 834px) {
   .problems__list-item:nth-child(odd) {
     transform: none;
@@ -679,21 +674,38 @@ body {
 }
 .problems__list-item p {
   font-family: var(--text_font);
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 200%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 180%;
   text-align: center;
   letter-spacing: 0.1em;
   color: var(--text_color);
 }
+@media screen and (min-width: 834px) {
+  .problems__list-item p {
+    line-height: 200%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .problems__list-item p {
+    font-weight: 600;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1728px) {
+  .problems__list-item p {
+    font-size: 20px;
+  }
+}
 .problems__list-item > div {
-  position: absolute;
   width: 244px;
   height: 328px;
   background-size: contain;
+  background-repeat: no-repeat;
 }
 @media screen and (min-width: 834px) {
   .problems__list-item > div {
+    position: absolute;
     width: 252px;
     height: 340px;
   }
@@ -710,17 +722,9 @@ body {
     height: 592px;
   }
 }
-.problems__list-item__list-item p {
-  font-family: var(--text_font);
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 200%;
-  text-align: center;
-  letter-spacing: 0.1em;
-  color: var(--text_color);
-}
 .problems__list-balloon--1 {
-  margin-left: 15px;
+  margin-left: 16px;
+  transform: rotate(16deg);
 }
 @media screen and (min-width: 834px) {
   .problems__list-balloon--1 {
@@ -735,6 +739,14 @@ body {
 @media screen and (min-width: 1728px) {
   .problems__list-balloon--1 {
     margin-left: 300px;
+  }
+}
+.problems__list-balloon--1 > p {
+  transform: rotate(-16deg);
+}
+@media screen and (min-width: 834px) {
+  .problems__list-balloon--1 > p {
+    transform: none;
   }
 }
 .problems__list-balloon--2 {
@@ -757,8 +769,9 @@ body {
   }
 }
 .problems__list-balloon--3 {
-  margin-top: 252px;
+  margin-top: -96px;
   margin-left: 146px;
+  transform: rotate(-32deg);
 }
 @media screen and (min-width: 834px) {
   .problems__list-balloon--3 {
@@ -778,6 +791,19 @@ body {
     margin-left: 213px;
   }
 }
+.problems__list-balloon--3 > p {
+  transform: rotate(32deg);
+}
+@media screen and (min-width: 834px) {
+  .problems__list-balloon--3 > p {
+    transform: none;
+  }
+}
+.problems__list-balloon--4 {
+  margin-top: -84px;
+  margin-left: 16px;
+  transform: rotate(16deg);
+}
 @media screen and (min-width: 834px) {
   .problems__list-balloon--4 {
     margin-top: 284px;
@@ -795,6 +821,19 @@ body {
     margin-top: 416px;
     margin-left: 642px;
   }
+}
+.problems__list-balloon--4 > p {
+  transform: rotate(-16deg);
+}
+@media screen and (min-width: 834px) {
+  .problems__list-balloon--4 > p {
+    transform: none;
+  }
+}
+.problems__list-balloon--5 {
+  margin-top: -96px;
+  margin-left: 146px;
+  transform: rotate(-32deg);
 }
 @media screen and (min-width: 834px) {
   .problems__list-balloon--5 {
@@ -814,16 +853,60 @@ body {
     margin-left: 1071px;
   }
 }
+.problems__list-balloon--5 > p {
+  transform: rotate(32deg);
+}
+@media screen and (min-width: 834px) {
+  .problems__list-balloon--5 > p {
+    transform: none;
+  }
+}
 
 .balloon-negative {
-  padding: 144px 82px 0px 82px;
+  padding: 68px 28px;
   background-image: url("/images/index/png/balloon-negative_mac.png");
 }
-.balloon-negative > p {
-  font-weight: 500;
+@media screen and (min-width: 834px) {
+  .balloon-negative {
+    padding: 66px 44px;
+    transform: none;
+  }
 }
-
+@media screen and (min-width: 1440px) {
+  .balloon-negative {
+    padding: 120px 68px;
+  }
+}
+@media screen and (min-width: 1728px) {
+  .balloon-negative {
+    padding: 144px 82px;
+  }
+}
+.balloon-negative > p {
+  font-weight: 400;
+}
+@media screen and (min-width: 1440px) {
+  .balloon-negative > p {
+    font-weight: 500;
+  }
+}
 .balloon-positive {
-  padding: 112px 65px 0px 65px;
+  padding: 42px 34px;
   background-image: url("/images/index/png/balloon-positive_mac.png");
+}
+@media screen and (min-width: 834px) {
+  .balloon-positive {
+    padding: 40px 40px;
+    transform: none;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .balloon-positive {
+    padding: 100px 32px;
+  }
+}
+@media screen and (min-width: 1728px) {
+  .balloon-positive {
+    padding: 112px 65px;
+  }
 }/*# sourceMappingURL=main.css.map */

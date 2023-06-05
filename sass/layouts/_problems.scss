@@ -1,5 +1,6 @@
 .problems {
-    height: 1104px;
+    margin-top: 20px;
+    height: 1139px;
 
     @media screen and (min-width: 834px) {
         margin-top: 28px;
@@ -17,15 +18,6 @@
     }
 
     &__list-item {
-
-        &:nth-child(odd) {
-            transform: rotate(16deg);
-        }
-
-        &:nth-child(even) {
-            transform: rotate(-32deg);
-        }
-
         @media screen and (min-width: 834px) {
             &:nth-child(odd) {
                 transform: none;
@@ -38,27 +30,36 @@
 
         & p {
             font-family: var(--text_font);
-            font-weight: 600;
-            font-size: 20px;
-            line-height: 200%;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 180%;
             text-align: center;
             letter-spacing: 0.1em;
             color: var(--text_color);
 
-            @media screen and (min-width: 834px) {}
+            @media screen and (min-width: 834px) {
+                line-height: 200%;
+            }
 
-            @media screen and (min-width: 1440px) {}
+            @media screen and (min-width: 1440px) {
+                font-weight: 600;
+                font-size: 16px;
+            }
 
-            @media screen and (min-width: 1728px) {}
+            @media screen and (min-width: 1728px) {
+                font-size: 20px;
+            }
         }
 
+        // Размер шара
         &>div {
-            position: absolute;
             width: 244px;
             height: 328px;
             background-size: contain;
+            background-repeat: no-repeat;
 
             @media screen and (min-width: 834px) {
+                position: absolute;
                 width: 252px;
                 height: 340px;
             }
@@ -73,26 +74,11 @@
                 height: 592px;
             }
         }
-
-        &__list-item p {
-            font-family: var(--text_font);
-            font-weight: 600;
-            font-size: 20px;
-            line-height: 200%;
-            text-align: center;
-            letter-spacing: 0.1em;
-            color: var(--text_color);
-
-            @media screen and (min-width: 834px) {}
-
-            @media screen and (min-width: 1440px) {}
-
-            @media screen and (min-width: 1728px) {}
-        }
     }
 
     &__list-balloon--1 {
-        margin-left: 15px;
+        margin-left: 16px;
+        transform: rotate(16deg);
 
         @media screen and (min-width: 834px) {
             margin-left: 132px;
@@ -104,6 +90,14 @@
 
         @media screen and (min-width: 1728px) {
             margin-left: 300px;
+        }
+
+        &>p {
+            transform: rotate(-16deg);
+
+            @media screen and (min-width: 834px) {
+                transform: none;
+            }
         }
     }
 
@@ -125,8 +119,9 @@
     }
 
     &__list-balloon--3 {
-        margin-top: 252px;
+        margin-top: -96px;
         margin-left: 146px;
+        transform: rotate(-32deg);
 
         @media screen and (min-width: 834px) {
             margin-top: 372px;
@@ -142,9 +137,20 @@
             margin-top: 624px;
             margin-left: 213px;
         }
+
+        &>p {
+            transform: rotate(32deg);
+
+            @media screen and (min-width: 834px) {
+                transform: none;
+            }
+        }
     }
 
     &__list-balloon--4 {
+        margin-top: -84px;
+        margin-left: 16px;
+        transform: rotate(16deg);
 
         @media screen and (min-width: 834px) {
             margin-top: 284px;
@@ -160,9 +166,20 @@
             margin-top: 416px;
             margin-left: 642px;
         }
+
+        &>p {
+            transform: rotate(-16deg);
+
+            @media screen and (min-width: 834px) {
+                transform: none;
+            }
+        }
     }
 
     &__list-balloon--5 {
+        margin-top: -96px;
+        margin-left: 146px;
+        transform: rotate(-32deg);
 
         @media screen and (min-width: 834px) {
             margin-top: 372px;
@@ -178,48 +195,64 @@
             margin-top: 624px;
             margin-left: 1071px;
         }
+
+        &>p {
+            transform: rotate(32deg);
+
+            @media screen and (min-width: 834px) {
+                transform: none;
+            }
+        }
     }
-
-    // &__list-text {
-    //     font-family: var(--text_font);
-    //     font-weight: 600;
-    //     font-size: 20px;
-    //     line-height: 200%;
-    //     text-align: center;
-    //     letter-spacing: 0.1em;
-    //     color: var(--text_color);
-
-    //     @media screen and (min-width: 834px) {}
-
-    //     @media screen and (min-width: 1440px) {}
-
-    //     @media screen and (min-width: 1728px) {}
-    // }
 }
 
 
 .balloon-negative {
-    padding: 144px 82px 0px 82px;
+    padding: 68px 28px;
     background-image: url("/images/index/png/balloon-negative_mac.png");
 
-    @media screen and (min-width: 834px) {}
+    @media screen and (min-width: 834px) {
+        padding: 66px 44px;
+        transform: none;
+    }
 
-    @media screen and (min-width: 1440px) {}
+    @media screen and (min-width: 1440px) {
+        // padding: 120px 68px 0px 68px;
+        padding: 120px 68px;
+    }
 
-    @media screen and (min-width: 1728px) {}
+    @media screen and (min-width: 1728px) {
+        padding: 144px 82px;
+        // padding: 144px 82px 0px 82px;
+    }
 
     &>p {
-        font-weight: 500;
+        font-weight: 400;
+
+        @media screen and (min-width: 834px) {}
+
+        @media screen and (min-width: 1440px) {
+            font-weight: 500;
+        }
+
+        @media screen and (min-width: 1728px) {}
     }
 }
 
 .balloon-positive {
-    padding: 112px 65px 0px 65px;
+    padding: 42px 34px;
     background-image: url("/images/index/png/balloon-positive_mac.png");
 
-    @media screen and (min-width: 834px) {}
+    @media screen and (min-width: 834px) {
+        padding: 40px 40px;
+        transform: none;
+    }
 
-    @media screen and (min-width: 1440px) {}
+    @media screen and (min-width: 1440px) {
+        padding: 100px 32px;
+    }
 
-    @media screen and (min-width: 1728px) {}
+    @media screen and (min-width: 1728px) {
+        padding: 112px 65px;
+    }
 }
