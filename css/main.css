@@ -864,22 +864,45 @@ body {
 
 .balloon-negative {
   padding: 68px 28px;
-  background-image: url("/images/index/png/balloon-negative_mac.png");
+  background-image: url("/images/index/png/balloon-negative_mob.png");
+}
+@media (min-device-pixel-ratio: 2) and (min-width: 390px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 390px), (min-resolution: 192dpi) and (min-width: 390px), (min-resolution: 2dppx) and (min-width: 390px) {
+  .balloon-negative {
+    background-image: url("/images/index/png/balloon-negative_mob@2x.png");
+  }
 }
 @media screen and (min-width: 834px) {
   .balloon-negative {
     padding: 66px 44px;
     transform: none;
+    background-image: url("/images/index/png/balloon-negative_tab.png");
+  }
+}
+@media screen and (min-width: 834px) and (min-device-pixel-ratio: 2) and (min-width: 834px), screen and (min-width: 834px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 834px), screen and (min-width: 834px) and (min-resolution: 192dpi) and (min-width: 834px), screen and (min-width: 834px) and (min-resolution: 2dppx) and (min-width: 834px) {
+  .balloon-negative {
+    background-image: url("/images/index/png/balloon-negative_tab@2x.png");
   }
 }
 @media screen and (min-width: 1440px) {
   .balloon-negative {
     padding: 120px 68px;
+    background-image: url("/images/index/png/balloon-negative_desk.png");
+  }
+}
+@media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2) and (min-width: 1440px), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1440px), screen and (min-width: 1440px) and (min-resolution: 192dpi) and (min-width: 1440px), screen and (min-width: 1440px) and (min-resolution: 2dppx) and (min-width: 1440px) {
+  .balloon-negative {
+    background-image: url("/images/index/png/balloon-negative_desk@2x.png");
   }
 }
 @media screen and (min-width: 1728px) {
   .balloon-negative {
     padding: 144px 82px;
+    background-image: url("/images/index/png/balloon-negative_mac.png");
+  }
+}
+@media screen and (min-width: 1728px) and (min-device-pixel-ratio: 2) and (min-width: 1728px), screen and (min-width: 1728px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1728px), screen and (min-width: 1728px) and (min-resolution: 192dpi) and (min-width: 1728px), screen and (min-width: 1728px) and (min-resolution: 2dppx) and (min-width: 1728px) {
+  .balloon-negative {
+    background-image: url("/images/index/png/balloon-negative_mac@2x.png");
   }
 }
 .balloon-negative > p {
@@ -892,21 +915,44 @@ body {
 }
 .balloon-positive {
   padding: 42px 34px;
-  background-image: url("/images/index/png/balloon-positive_mac.png");
+  background-image: url("/images/index/png/balloon-positive_mob.png");
+}
+@media (min-device-pixel-ratio: 2) and (min-width: 390px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 390px), (min-resolution: 192dpi) and (min-width: 390px), (min-resolution: 2dppx) and (min-width: 390px) {
+  .balloon-positive {
+    background-image: url("/images/index/png/balloon-positive_mob@2x.png");
+  }
 }
 @media screen and (min-width: 834px) {
   .balloon-positive {
     padding: 40px 40px;
     transform: none;
+    background-image: url("/images/index/png/balloon-positive_tab.png");
+  }
+}
+@media screen and (min-width: 834px) and (min-device-pixel-ratio: 2) and (min-width: 834px), screen and (min-width: 834px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 834px), screen and (min-width: 834px) and (min-resolution: 192dpi) and (min-width: 834px), screen and (min-width: 834px) and (min-resolution: 2dppx) and (min-width: 834px) {
+  .balloon-positive {
+    background-image: url("/images/index/png/balloon-positive_tab@2x.png");
   }
 }
 @media screen and (min-width: 1440px) {
   .balloon-positive {
     padding: 100px 32px;
+    background-image: url("/images/index/png/balloon-positive_desk.png");
+  }
+}
+@media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2) and (min-width: 1440px), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1440px), screen and (min-width: 1440px) and (min-resolution: 192dpi) and (min-width: 1440px), screen and (min-width: 1440px) and (min-resolution: 2dppx) and (min-width: 1440px) {
+  .balloon-positive {
+    background-image: url("/images/index/png/balloon-positive_desk@2x.png");
   }
 }
 @media screen and (min-width: 1728px) {
   .balloon-positive {
     padding: 112px 65px;
+    background-image: url("/images/index/png/balloon-positive_mac.png");
+  }
+}
+@media screen and (min-width: 1728px) and (min-device-pixel-ratio: 2) and (min-width: 1728px), screen and (min-width: 1728px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1728px), screen and (min-width: 1728px) and (min-resolution: 192dpi) and (min-width: 1728px), screen and (min-width: 1728px) and (min-resolution: 2dppx) and (min-width: 1728px) {
+  .balloon-positive {
+    background-image: url("/images/index/png/balloon-positive_mac@2x.png");
   }
 }/*# sourceMappingURL=main.css.map */
