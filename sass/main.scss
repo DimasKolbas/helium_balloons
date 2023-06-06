@@ -6,6 +6,7 @@
 @import 'base/section-narrow';
 @import 'utils/variable';
 @import 'utils/visually-hidden';
+@import 'components/caption';
 
 //Header section
 @import 'layouts/header';
@@ -15,5 +16,7 @@
 // Problems sections
 @import 'layouts/problems';
 
+// Products section
+@import 'layouts/products';
 
 // Footer-section
