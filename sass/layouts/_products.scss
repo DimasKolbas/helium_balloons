@@ -23,17 +23,20 @@
 
     &__section--1 {
         margin-top: 64px;
-        margin-right: 100px;
     }
 
     &__section--2 {
-        margin-top: 64px;
+        margin-top: 24px;
+        margin-left: 84px;
+        margin-right: 84px;
+    }
+
+    &__section--3 {
+        margin-top: -20px;
     }
 
     &__block-title {
         position: absolute;
-        margin-top: -64px;
-        margin-left: 68px;
         font-family: var(--title_font);
         font-style: normal;
         font-weight: 400;
@@ -68,6 +71,13 @@
             font-size: 24px;
         }
     }
+
+    &__title--1 {
+        margin-top: 56px;
+        margin-left: 68px;
+    }
+
+    &__title--2 {}
 
     &__list {}
 
