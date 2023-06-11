@@ -31,8 +31,8 @@
 
     &__section--type2 {
         margin-top: 24px;
-        margin-left: 84px;
-        margin-right: 84px;
+        margin-left: 102px;
+        margin-right: 102px;
     }
 
     &__section--type3 {
@@ -100,5 +100,71 @@
             background: var(--lines_color);
             border-radius: 8px 0px 0px 8px;
         }
+    }
+
+    &__title--type3 {
+        margin-top: 140px;
+        margin-bottom: 60px;
+        font-family: var(--title_font);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: var(--title_color);
+
+        &::before {
+            content: '';
+            position: absolute;
+            margin-top: 30px;
+            margin-left: -92px;
+            width: 716px;
+            height: 8px;
+            background: var(--lines_color);
+            border-radius: 8px;
+        }
+    }
+
+    &__gallery {}
+
+    &__gallery-list {
+        display: flex;
+    }
+
+    &__gallery-item {
+        margin-top: 72px;
+        width: 320px;
+        height: 380px;
+        box-shadow: (1px 1px 8px rgba(21, 16, 15, 0.5));
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    &__gallery-item--average {
+        margin-left: 22px;
+        margin-right: 22px;
+        width: 618px;
+        height: 380px;
+        box-shadow: (1px 1px 8px rgba(21, 16, 15, 0.5));
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    &__gallery-text {
+        position: absolute;
+        margin-top: 392px;
+        margin-left: 342px;
+        width: 618px;
+        height: 88px;
+        padding: 12px 88px;
+        background: radial-gradient(80.5% 80.5% at 50% 50%, rgba(193, 250, 246, 0) 60.42%, #C1FAF6 100%);
+        border-radius: 8px;
+
+        font-family: 'Inter';
+        font-size: 16px;
+        line-height: 200%;
+        letter-spacing: 0.05em;
+        color: #15100F;
     }
 }
