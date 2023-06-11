@@ -1051,32 +1051,38 @@ body {
 .products__list {
   display: flex;
 }
-.products__section--1 {
+.products__list--average {
+  margin-top: 180px;
+  margin-bottom: 180px;
+}
+.products__section {
   margin-top: 64px;
 }
-.products__section--2 {
+.products__section--type2 {
   margin-top: 24px;
   margin-left: 84px;
   margin-right: 84px;
 }
-.products__section--3 {
+.products__section--type3 {
   margin-top: -20px;
 }
-.products__block-title {
+.products__title {
   position: absolute;
+  margin-top: -64px;
+  margin-left: 68px;
   font-family: var(--title_font);
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 24px;
   line-height: 150%;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--title_color);
 }
-.products__block-title::before {
+.products__title::before {
   content: "";
   position: absolute;
-  left: -281px;
+  left: -280px;
   margin-top: 30px;
   width: 716px;
   height: 8px;
@@ -1084,24 +1090,43 @@ body {
   border-radius: 0px 8px 8px 0px;
 }
 @media screen and (min-width: 834px) {
-  .products__block-title {
+  .products__title {
     font-size: 16px;
   }
 }
 @media screen and (min-width: 1440px) {
-  .products__block-title {
+  .products__title {
     font-size: 18px;
   }
 }
 @media screen and (min-width: 1728px) {
-  .products__block-title {
+  .products__title {
     font-size: 24px;
   }
 }
-.products__title--1 {
+.products__title--type2 {
+  position: absolute;
+  right: 200px;
   margin-top: 56px;
-  margin-left: 68px;
+  font-family: var(--title_font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--title_color);
 }
+.products__title--type2::before {
+  content: "";
+  position: absolute;
+  margin-top: 30px;
+  width: 716px;
+  height: 8px;
+  background: var(--lines_color);
+  border-radius: 8px 0px 0px 8px;
+}
+
 .card {
   position: relative;
   width: 360px;
@@ -1134,10 +1159,10 @@ body {
   z-index: -1;
 }
 .card__image {
+  box-shadow: 1px 1px 8px 0px rgba(21, 16, 15, 0.5);
   border-radius: 8px;
-  filter: drop-shadow(1px 1px 8px rgba(21, 16, 15, 0.5));
 }
-.card__title--1 {
+.card__title {
   position: relative;
   bottom: 84px;
   width: 360px;
@@ -1156,7 +1181,7 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-.card__title--2 {
+.card__title--type2 {
   position: relative;
   bottom: 84px;
   width: 360px;
