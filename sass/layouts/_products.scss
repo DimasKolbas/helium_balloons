@@ -61,35 +61,32 @@
     }
 
     &__title--type1 {
-        // left: 281px;
-        // left: 213px;
         margin-top: -64px;
         margin-left: 68px;
 
         &::before {
-            // left: -280px;
-            // left: -213px;
             margin-top: 30px;
             margin-left: -281px;
         }
     }
 
     &__title--type2 {
-        right: 200px;
         margin-top: 56px;
+        margin-left: 799px;
 
         &::before {
             margin-top: 30px;
+            border-radius: 8px 0px 0px 8px;
         }
     }
 
     &__title--type3 {
-        left: 308px;
         margin-top: -64px;
+        margin-left: 95px;
 
         &::before {
-            left: -307px;
             margin-top: 30px;
+            margin-left: -308px;
         }
     }
 
@@ -119,7 +116,7 @@
         }
     }
 
-    &__gallery {}
+    // &__gallery {}
 
     &__gallery-list {
         display: flex;
@@ -160,4 +157,86 @@
         letter-spacing: 0.05em;
         color: #15100F;
     }
+
+    &__carousel {
+        display: flex;
+        margin-top: 60px;
+        width: 1302px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    &__carousel-item {
+        // margin-top: 60px;
+        min-width: 304px;
+        height: 360px;
+
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(0.9);
+        }
+
+
+        &:first-child {
+            margin-left: -153px;
+        }
+
+        &:nth-child(even) {
+            margin-left: 22px;
+            margin-right: 22px;
+        }
+
+        &.visible {
+            opacity: 1;
+            transform: translateX(0%);
+        }
+    }
+
+    &__carousel-textblock {
+        display: flex;
+        margin-top: 432px;
+    }
+
+    &__carousel-text {
+        width: 476px;
+        height: 120px;
+        padding: 12px;
+        background: radial-gradient(80.5% 80.5% at 50% 50%, rgba(193, 250, 246, 0) 60.42%, #C1FAF6 100%);
+        border-radius: 8px;
+
+        font-family: var(--text_font);
+        font-size: 16px;
+        line-height: 200%;
+        letter-spacing: 0.05em;
+        color: var(--text_color);
+
+        &:last-child {
+            margin-left: 349px;
+        }
+    }
+}
+
+// .photo-container img {
+//     transition: transform 0.3s ease;
+// }
+
+// .photo-container img:hover {
+//     transform: scale(1.1);
+// }
+
+// .photo-container img.left {
+//     transform: translateX(-100%);
+// }
+
+// .photo-container img.right {
+//     transform: translateX(100%);
+// }
+
+.left {
+    transform: translateX(-100%);
+}
+
+.right {
+    transform: translateX(100%);
 }
