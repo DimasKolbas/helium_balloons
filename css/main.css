@@ -1167,11 +1167,15 @@ body {
   letter-spacing: 0.05em;
   color: #15100F;
 }
+.products__photo-container {
+  width: 1302px;
+  height: 360px;
+  outline: 1px solid tomato;
+}
 .products__photo-wrapper {
   position: static;
   display: flex;
   margin-top: 60px;
-  width: 1302px;
   overflow: hidden;
   transition: transform 0.3s ease;
   cursor: pointer;
@@ -1184,16 +1188,8 @@ body {
 .products__photo-wrapper_item:first-child {
   margin-left: -153px;
 }
-.products__photo-wrapper_item:first-child:hover {
-  margin-right: 153px;
-  transform: translateX(50%);
-}
 .products__photo-wrapper_item:last-child {
   margin-right: -153px;
-}
-.products__photo-wrapper_item:last-child:hover {
-  margin-right: -153px;
-  transform: translateX(50%);
 }
 .products__photo-wrapper_item:nth-child(even) {
   margin-left: 22px;

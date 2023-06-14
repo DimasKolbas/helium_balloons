@@ -158,16 +158,19 @@
         color: #15100F;
     }
 
-    &__photo-wrapper {
+    &__photo-container {
         width: 1302px;
+        height: 360px;
+        // overflow: hidden;
+        outline: 1px solid tomato;
     }
 
-    &__photo-wrapper_list {
+    &__photo-wrapper {
         position: static;
         display: flex;
         margin-top: 60px;
         // width: 1302px;
-        // overflow: hidden;
+        overflow: hidden;
         transition: transform 0.3s ease;
         cursor: pointer;
     }
@@ -181,47 +184,37 @@
             margin-left: -153px;
         }
 
-        // &:first-child:hover {
-        //     margin-right: 153px;
-        //     transform: translateX(50%);
-        // }
-
         &:last-child {
             margin-right: -153px;
         }
 
-        // &:last-child:hover {
-        //     margin-left: -153px;
-        //     transform: translateX(50%);
-        // }
 
+        &:nth-child(even) {
+            margin-left: 22px;
+            margin-right: 22px;
+        }
     }
 
-    &:nth-child(even) {
-        margin-left: 22px;
-        margin-right: 22px;
+    &__photo-wrapper_textblock {
+        display: flex;
+        margin-top: 12px;
     }
-}
 
-&__photo-wrapper_textblock {
-    display: flex;
-    margin-top: 12px;
-}
+    &__photo-wrapper_text {
+        width: 476px;
+        height: 120px;
+        padding: 12px;
+        background: radial-gradient(80.5% 80.5% at 50% 50%, rgba(193, 250, 246, 0) 60.42%, #C1FAF6 100%);
+        border-radius: 8px;
 
-&__photo-wrapper_text {
-    width: 476px;
-    height: 120px;
-    padding: 12px;
-    background: radial-gradient(80.5% 80.5% at 50% 50%, rgba(193, 250, 246, 0) 60.42%, #C1FAF6 100%);
-    border-radius: 8px;
+        font-family: var(--text_font);
+        font-size: 16px;
+        line-height: 200%;
+        letter-spacing: 0.05em;
+        color: var(--text_color);
 
-    font-family: var(--text_font);
-    font-size: 16px;
-    line-height: 200%;
-    letter-spacing: 0.05em;
-    color: var(--text_color);
-
-    &:last-child {
-        margin-left: 349px;
+        &:last-child {
+            margin-left: 349px;
+        }
     }
 }
