@@ -1122,13 +1122,16 @@ body {
 }
 .products__title--type5 {
   position: static;
-  margin-top: 680px;
+  margin-top: 140px;
   font-size: 20px;
 }
 .products__title--type5::before {
   margin-top: 30px;
   margin-left: -212px;
   border-radius: 8px;
+}
+.products__gallery {
+  position: static;
 }
 .products__gallery-list {
   display: flex;
@@ -1151,8 +1154,7 @@ body {
   overflow: hidden;
 }
 .products__gallery-text {
-  position: absolute;
-  margin-top: 392px;
+  margin-top: -48px;
   margin-left: 342px;
   width: 618px;
   height: 88px;
@@ -1165,37 +1167,43 @@ body {
   letter-spacing: 0.05em;
   color: #15100F;
 }
-.products__carousel {
+.products__photo-wrapper {
+  position: static;
   display: flex;
   margin-top: 60px;
   width: 1302px;
   overflow: hidden;
+  transition: transform 0.3s ease;
   cursor: pointer;
 }
-.products__carousel-item {
+.products__photo-wrapper_item {
   min-width: 304px;
   height: 360px;
   transition: transform 0.3s ease;
 }
-.products__carousel-item:hover {
-  transform: scale(0.9);
-}
-.products__carousel-item:first-child {
+.products__photo-wrapper_item:first-child {
   margin-left: -153px;
 }
-.products__carousel-item:nth-child(even) {
+.products__photo-wrapper_item:first-child:hover {
+  margin-right: 153px;
+  transform: translateX(50%);
+}
+.products__photo-wrapper_item:last-child {
+  margin-right: -153px;
+}
+.products__photo-wrapper_item:last-child:hover {
+  margin-right: -153px;
+  transform: translateX(50%);
+}
+.products__photo-wrapper_item:nth-child(even) {
   margin-left: 22px;
   margin-right: 22px;
 }
-.products__carousel-item.visible {
-  opacity: 1;
-  transform: translateX(0%);
-}
-.products__carousel-textblock {
+.products__photo-wrapper_textblock {
   display: flex;
-  margin-top: 432px;
+  margin-top: 12px;
 }
-.products__carousel-text {
+.products__photo-wrapper_text {
   width: 476px;
   height: 120px;
   padding: 12px;
@@ -1207,16 +1215,8 @@ body {
   letter-spacing: 0.05em;
   color: var(--text_color);
 }
-.products__carousel-text:last-child {
+.products__photo-wrapper_text:last-child {
   margin-left: 349px;
-}
-
-.left {
-  transform: translateX(-100%);
-}
-
-.right {
-  transform: translateX(100%);
 }
 
 .card {
