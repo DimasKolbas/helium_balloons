@@ -1276,6 +1276,24 @@ body {
   width: 296px;
   height: 364px;
 }
+@media screen and (min-width: 834px) {
+  .card {
+    width: 200px;
+    height: 280px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .card {
+    width: 296px;
+    height: 364px;
+  }
+}
+@media screen and (min-width: 1728px) {
+  .card {
+    width: 360px;
+    height: 440px;
+  }
+}
 .card::before {
   content: "";
   position: absolute;

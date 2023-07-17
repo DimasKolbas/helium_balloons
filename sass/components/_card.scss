@@ -3,20 +3,20 @@
     width: 296px;
     height: 364px;
 
-    // @media screen and (min-width: 834px) {
-    //     width: 200px;
-    //     height: 280px;
-    // }
+    @media screen and (min-width: 834px) {
+        width: 200px;
+        height: 280px;
+    }
 
-    // @media screen and (min-width: 1440px) {
-    //     width: 296px;
-    //     height: 364px;
-    // }
+    @media screen and (min-width: 1440px) {
+        width: 296px;
+        height: 364px;
+    }
 
-    // @media screen and (min-width: 1728px) {
-    //     width: 360px;
-    //     height: 440px;
-    // }
+    @media screen and (min-width: 1728px) {
+        width: 360px;
+        height: 440px;
+    }
 
     &::before {
         content: '';
