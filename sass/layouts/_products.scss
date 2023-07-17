@@ -26,38 +26,100 @@
     }
 
     &__section {
-        margin-top: 64px;
+        margin-top: 32px;
+
+        @media screen and (min-width: 834px) {
+            margin-top: 46px;
+        }
+
+        @media screen and (min-width: 1440px) {
+            margin-top: 64px;
+        }
+
+        @media screen and (min-width: 1728px) {}
     }
 
     &__section--type2 {
         margin-top: 24px;
         margin-left: 102px;
         margin-right: 102px;
+
+        @media screen and (min-width: 834px) {}
+
+        @media screen and (min-width: 1440px) {
+            margin-top: 24px;
+            margin-left: 73px;
+            margin-right: 73px;
+        }
+
+        @media screen and (min-width: 1728px) {
+            margin-left: 102px;
+            margin-right: 102px;
+        }
     }
 
     &__section--type3 {
         margin-top: -20px;
+
+        @media screen and (min-width: 834px) {}
+
+        @media screen and (min-width: 1440px) {
+            margin-top: -20px;
+        }
+
+        @media screen and (min-width: 1728px) {}
     }
 
     &__title {
         position: absolute;
         font-family: var(--title_font);
-        font-style: normal;
+        // font-style: normal;
         font-weight: 400;
-        font-size: 24px;
+        font-size: 16px;
         line-height: 150%;
-        letter-spacing: 0.05em;
+        letter-spacing: 0.8px;
         text-transform: uppercase;
         color: var(--title_color);
+
+        @media screen and (min-width: 390px) {}
+
+        @media screen and (min-width: 834px) {}
+
+        @media screen and (min-width: 1440px) {
+            font-size: 18px;
+            letter-spacing: 0.9px;
+        }
+
+        @media screen and (min-width: 1728px) {
+            font-size: 24px;
+            letter-spacing: 1.2px;
+        }
 
         &::before {
             content: '';
             position: absolute;
-            width: 716px;
-            height: 8px;
+            width: 296px;
+            height: 4px;
             background: var(--lines_color);
             border-radius: 0px 8px 8px 0px;
+
+            @media screen and (min-width: 390px) {}
+
+            @media screen and (min-width: 834px) {
+                width: 380px;
+                height: 6px;
+            }
+
+            @media screen and (min-width: 1440px) {
+                width: 598px;
+                height: 8px;
+            }
+
+            @media screen and (min-width: 1728px) {
+                width: 716px;
+            }
         }
+
     }
 
     &__title--type1 {

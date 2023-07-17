@@ -1056,34 +1056,90 @@ body {
   margin-bottom: 180px;
 }
 .products__section {
-  margin-top: 64px;
+  margin-top: 32px;
+}
+@media screen and (min-width: 834px) {
+  .products__section {
+    margin-top: 46px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .products__section {
+    margin-top: 64px;
+  }
 }
 .products__section--type2 {
   margin-top: 24px;
   margin-left: 102px;
   margin-right: 102px;
 }
+@media screen and (min-width: 1440px) {
+  .products__section--type2 {
+    margin-top: 24px;
+    margin-left: 73px;
+    margin-right: 73px;
+  }
+}
+@media screen and (min-width: 1728px) {
+  .products__section--type2 {
+    margin-left: 102px;
+    margin-right: 102px;
+  }
+}
 .products__section--type3 {
   margin-top: -20px;
+}
+@media screen and (min-width: 1440px) {
+  .products__section--type3 {
+    margin-top: -20px;
+  }
 }
 .products__title {
   position: absolute;
   font-family: var(--title_font);
-  font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 150%;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.8px;
   text-transform: uppercase;
   color: var(--title_color);
+}
+@media screen and (min-width: 1440px) {
+  .products__title {
+    font-size: 18px;
+    letter-spacing: 0.9px;
+  }
+}
+@media screen and (min-width: 1728px) {
+  .products__title {
+    font-size: 24px;
+    letter-spacing: 1.2px;
+  }
 }
 .products__title::before {
   content: "";
   position: absolute;
-  width: 716px;
-  height: 8px;
+  width: 296px;
+  height: 4px;
   background: var(--lines_color);
   border-radius: 0px 8px 8px 0px;
+}
+@media screen and (min-width: 834px) {
+  .products__title::before {
+    width: 380px;
+    height: 6px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .products__title::before {
+    width: 598px;
+    height: 8px;
+  }
+}
+@media screen and (min-width: 1728px) {
+  .products__title::before {
+    width: 716px;
+  }
 }
 .products__title--type1 {
   margin-top: -64px;
@@ -1217,34 +1273,69 @@ body {
 
 .card {
   position: relative;
-  width: 360px;
-  height: 440px;
-  overflow: visible;
+  width: 296px;
+  height: 364px;
 }
 .card::before {
   content: "";
   position: absolute;
   left: 0;
-  width: 360px;
-  height: 440px;
+  width: 296px;
+  height: 364px;
   margin-top: -10px;
   margin-left: 10px;
   background: #FFFFFF;
   box-shadow: 0px 2px 4px rgba(21, 16, 15, 0.5);
   border-radius: 8px;
 }
+@media screen and (min-width: 834px) {
+  .card::before {
+    width: 200px;
+    height: 280px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .card::before {
+    width: 296px;
+    height: 364px;
+  }
+}
+@media screen and (min-width: 1728px) {
+  .card::before {
+    width: 360px;
+    height: 440px;
+  }
+}
 .card::after {
   content: "";
   position: absolute;
   left: 0;
-  width: 360px;
-  height: 440px;
+  width: 296px;
+  height: 364px;
   margin-top: -18px;
   margin-left: 18px;
   background: #FFFFFF;
   box-shadow: 0px 2px 4px rgba(21, 16, 15, 0.5);
   border-radius: 8px;
   z-index: -1;
+}
+@media screen and (min-width: 834px) {
+  .card::after {
+    width: 200px;
+    height: 280px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .card::after {
+    width: 296px;
+    height: 364px;
+  }
+}
+@media screen and (min-width: 1728px) {
+  .card::after {
+    width: 360px;
+    height: 440px;
+  }
 }
 .card__image {
   box-shadow: 1px 1px 8px 0px rgba(21, 16, 15, 0.5);

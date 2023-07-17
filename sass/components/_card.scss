@@ -1,34 +1,78 @@
 .card {
     position: relative;
-    width: 360px;
-    height: 440px;
-    overflow: visible;
+    width: 296px;
+    height: 364px;
+
+    // @media screen and (min-width: 834px) {
+    //     width: 200px;
+    //     height: 280px;
+    // }
+
+    // @media screen and (min-width: 1440px) {
+    //     width: 296px;
+    //     height: 364px;
+    // }
+
+    // @media screen and (min-width: 1728px) {
+    //     width: 360px;
+    //     height: 440px;
+    // }
 
     &::before {
         content: '';
         position: absolute;
         left: 0;
-        width: 360px;
-        height: 440px;
+        width: 296px;
+        height: 364px;
         margin-top: -10px;
         margin-left: 10px;
         background: #FFFFFF;
         box-shadow: 0px 2px 4px rgba(21, 16, 15, 0.5);
         border-radius: 8px;
+
+        @media screen and (min-width: 834px) {
+            width: 200px;
+            height: 280px;
+        }
+
+        @media screen and (min-width: 1440px) {
+            width: 296px;
+            height: 364px;
+        }
+
+        @media screen and (min-width: 1728px) {
+            width: 360px;
+            height: 440px;
+        }
     }
 
     &::after {
         content: '';
         position: absolute;
         left: 0;
-        width: 360px;
-        height: 440px;
+        width: 296px;
+        height: 364px;
         margin-top: -18px;
         margin-left: 18px;
         background: #FFFFFF;
         box-shadow: 0px 2px 4px rgba(21, 16, 15, 0.5);
         border-radius: 8px;
         z-index: -1;
+
+        @media screen and (min-width: 834px) {
+            width: 200px;
+            height: 280px;
+        }
+
+        @media screen and (min-width: 1440px) {
+            width: 296px;
+            height: 364px;
+        }
+
+        @media screen and (min-width: 1728px) {
+            width: 360px;
+            height: 440px;
+        }
     }
 
     &__image {
