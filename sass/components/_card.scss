@@ -1,3 +1,4 @@
+//Card of products
 .card {
     position: relative;
     width: 296px;
@@ -76,8 +77,26 @@
     }
 
     &__image {
+        min-width: 296px;
+        height: 364px;
         box-shadow: 1px 1px 8px 0px rgba(21, 16, 15, 0.5);
         border-radius: 8px;
+
+        @media screen and (min-width: 834px) {
+            width: 200px;
+            min-width: 200px;
+            height: 280px;
+        }
+
+        @media screen and (min-width: 1440px) {
+            min-width: 296px;
+            height: 364px;
+        }
+
+        @media screen and (min-width: 1728px) {
+            min-width: 360px;
+            height: 440px;
+        }
     }
 
     &__title {
