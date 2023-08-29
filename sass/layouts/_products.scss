@@ -16,7 +16,7 @@
     }
 
     &__list {
-        display: block;
+        display: inline-block;
 
         @media screen and (min-width: 834px) {
             display: flex;
@@ -29,57 +29,64 @@
 
     }
 
-    &__section {
-        margin-top: 32px;
-        background-size: contain;
+    &__section--type1 {
+        margin-top: 50px;
 
         @media screen and (min-width: 834px) {
-            margin-top: 46px;
+            margin-top: 70px;
         }
 
         @media screen and (min-width: 1440px) {
-            margin-top: 64px;
-        }
-
-        @media screen and (min-width: 1728px) {}
-    }
-
-    &__section--type2 {
-        margin-top: 32px;
-        margin-left: 102px;
-        margin-right: 102px;
-
-        @media screen and (min-width: 834px) {
-            margin-left: 50px;
-            margin-right: 50px;
-        }
-
-        @media screen and (min-width: 1440px) {
-            margin-top: 24px;
-            margin-left: 55px;
-            margin-right: 55px;
+            margin-top: 51px;
         }
 
         @media screen and (min-width: 1728px) {
-            margin-left: 84px;
-            margin-right: 84px;
+            margin-top: 62px;
+        }
+    }
+
+    &__section--type2 {
+        margin-top: 50px;
+        // margin-left: 47px;
+        // margin-right: 47px;
+
+        @media screen and (min-width: 834px) {
+            margin-top: 38px;
+            margin-left: 68px;
+            margin-right: 68px;
+        }
+
+        @media screen and (min-width: 1440px) {
+            margin-top: 17px;
+            margin-left: 73px;
+            margin-right: 73px;
+        }
+
+        @media screen and (min-width: 1728px) {
+            margin-top: 22px;
+            margin-left: 102px;
+            margin-right: 102px;
         }
     }
 
     &__section--type3 {
-        margin-top: -20px;
+        margin-top: 50px;
 
-        @media screen and (min-width: 834px) {}
-
-        @media screen and (min-width: 1440px) {
-            margin-top: -20px;
+        @media screen and (min-width: 834px) {
+            margin-top: 10px;
         }
 
-        @media screen and (min-width: 1728px) {}
+        @media screen and (min-width: 1440px) {
+            margin-top: -17px;
+        }
+
+        @media screen and (min-width: 1728px) {
+            margin-top: -22px;
+        }
     }
 
+    //Products title settings
     &__title {
-        position: absolute;
         font-family: var(--title_font);
         font-weight: 400;
         font-size: 16px;
@@ -90,7 +97,9 @@
 
         @media screen and (min-width: 390px) {}
 
-        @media screen and (min-width: 834px) {}
+        @media screen and (min-width: 834px) {
+            position: absolute;
+        }
 
         @media screen and (min-width: 1440px) {
             font-size: 18px;
@@ -106,7 +115,7 @@
             content: '';
             position: absolute;
             width: 296px;
-            height: 4px;
+            height: 2px;
             background: var(--lines_color);
             border-radius: 0px 8px 8px 0px;
 
@@ -117,6 +126,7 @@
             }
 
             @media screen and (min-width: 1440px) {
+                height: 4px;
                 width: 598px;
             }
 
@@ -128,6 +138,7 @@
 
     }
 
+    //Products titles position
     &__title--type1 {
         margin-top: 48px;
 
@@ -142,15 +153,14 @@
         }
 
         @media screen and (min-width: 1728px) {
-            // margin-left: 68px;
             margin-left: 148px;
         }
 
         &::before {
-            margin-top: 30px;
+            margin-top: 24px;
 
             @media screen and (min-width: 834px) {
-                margin-top: 24px;
+                margin-top: 22px;
                 margin-left: -88px;
             }
 
@@ -177,12 +187,48 @@
     }
 
     &__title--type3 {
-        margin-top: -64px;
-        margin-left: 95px;
+        // margin-top: -64px;
+        // margin-left: 95px;
+
+        // &::before {
+        //     margin-top: 30px;
+        //     margin-left: -308px;
+        // }
+
+        margin-top: 48px;
+
+        @media screen and (min-width: 834px) {
+            margin-top: -24px;
+            margin-bottom: 0;
+            margin-left: 90px;
+        }
+
+        @media screen and (min-width: 1440px) {
+            margin-top: -64px;
+            margin-left: 160px;
+        }
+
+        @media screen and (min-width: 1728px) {
+            margin-left: 148px;
+        }
 
         &::before {
-            margin-top: 30px;
-            margin-left: -308px;
+            margin-top: 24px;
+
+            @media screen and (min-width: 834px) {
+                margin-top: 22px;
+                margin-left: -88px;
+            }
+
+            @media screen and (min-width: 1440px) {
+                margin-top: 24px;
+                margin-left: -271px;
+            }
+
+            @media screen and (min-width: 1728px) {
+                margin-top: 32px;
+                margin-left: -308px;
+            }
         }
     }
 
