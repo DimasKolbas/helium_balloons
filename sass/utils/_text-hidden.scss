@@ -1,0 +1,8 @@
+    .text-hidden {
+        // font-size: 0;
+        visibility: hidden;
+
+        @media screen and (min-width: 834px) {
+            visibility: visible;
+        }
+    }

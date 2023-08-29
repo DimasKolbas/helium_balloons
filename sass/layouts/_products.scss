@@ -47,8 +47,7 @@
 
     &__section--type2 {
         margin-top: 50px;
-        // margin-left: 47px;
-        // margin-right: 47px;
+        margin-bottom: 50px;
 
         @media screen and (min-width: 834px) {
             margin-top: 38px;
@@ -70,7 +69,7 @@
     }
 
     &__section--type3 {
-        margin-top: 50px;
+        // margin-top: 50px;
 
         @media screen and (min-width: 834px) {
             margin-top: 10px;
@@ -87,6 +86,7 @@
 
     //Products title settings
     &__title {
+        margin-top: 48px;
         font-family: var(--title_font);
         font-weight: 400;
         font-size: 16px;
@@ -99,9 +99,11 @@
 
         @media screen and (min-width: 834px) {
             position: absolute;
+            margin-top: -24px;
         }
 
         @media screen and (min-width: 1440px) {
+            margin-top: -64px;
             font-size: 18px;
             letter-spacing: 0.9px;
         }
@@ -114,6 +116,7 @@
         &::before {
             content: '';
             position: absolute;
+            margin-top: 24px;
             width: 296px;
             height: 2px;
             background: var(--lines_color);
@@ -122,34 +125,42 @@
             @media screen and (min-width: 390px) {}
 
             @media screen and (min-width: 834px) {
+                margin-top: 22px;
                 width: 380px;
             }
 
             @media screen and (min-width: 1440px) {
+                margin-top: 24px;
                 height: 4px;
                 width: 598px;
             }
 
             @media screen and (min-width: 1728px) {
+                margin-top: 32px;
                 height: 6px;
                 width: 716px;
             }
         }
-
     }
+
+    // &__title--hidden {
+    //     visibility: hidden;
+
+    //     @media screen and (min-width: 834px) {
+    //         visibility: visible;
+    //     }
+    // }
 
     //Products titles position
     &__title--type1 {
-        margin-top: 48px;
+        margin-left: -66px;
 
         @media screen and (min-width: 834px) {
-            margin-top: -24px;
             margin-left: 90px;
         }
 
         @media screen and (min-width: 1440px) {
-            margin-top: -64px;
-            margin-left: 160px;
+            margin-left: 162px;
         }
 
         @media screen and (min-width: 1728px) {
@@ -157,76 +168,80 @@
         }
 
         &::before {
-            margin-top: 24px;
+            margin-left: 32px;
 
             @media screen and (min-width: 834px) {
-                margin-top: 22px;
                 margin-left: -88px;
             }
 
             @media screen and (min-width: 1440px) {
-                margin-top: 24px;
                 margin-left: -271px;
             }
 
             @media screen and (min-width: 1728px) {
-                margin-top: 32px;
                 margin-left: -281px;
             }
         }
     }
 
     &__title--type2 {
-        margin-top: 56px;
-        margin-left: 799px;
+        margin-top: 80px;
+        margin-left: -94px;
+
+        @media screen and (min-width: 834px) {
+            margin-left: 374px;
+        }
+
+        @media screen and (min-width: 1440px) {
+            margin-left: 562px;
+        }
+
+        @media screen and (min-width: 1728px) {
+            margin-left: 718px;
+        }
 
         &::before {
-            margin-top: 30px;
             border-radius: 8px 0px 0px 8px;
+            margin-left: 72px;
+
+            @media screen and (min-width: 834px) {
+                margin-left: 0px;
+            }
+
+            @media screen and (min-width: 1440px) {}
+
+            @media screen and (min-width: 1728px) {}
         }
     }
 
     &__title--type3 {
-        // margin-top: -64px;
-        // margin-left: 95px;
-
-        // &::before {
-        //     margin-top: 30px;
-        //     margin-left: -308px;
-        // }
-
-        margin-top: 48px;
+        margin-left: 4px;
 
         @media screen and (min-width: 834px) {
-            margin-top: -24px;
             margin-bottom: 0;
-            margin-left: 90px;
+            margin-left: 108px;
         }
 
         @media screen and (min-width: 1440px) {
-            margin-top: -64px;
-            margin-left: 160px;
+            margin-left: 182px;
         }
 
         @media screen and (min-width: 1728px) {
-            margin-left: 148px;
+            margin-left: 176px;
         }
 
         &::before {
-            margin-top: 24px;
+            margin-left: -12px;
 
             @media screen and (min-width: 834px) {
-                margin-top: 22px;
-                margin-left: -88px;
+                margin-left: -108px;
             }
 
             @media screen and (min-width: 1440px) {
-                margin-top: 24px;
-                margin-left: -271px;
+                margin-left: -292px;
             }
 
             @media screen and (min-width: 1728px) {
-                margin-top: 32px;
                 margin-left: -308px;
             }
         }
