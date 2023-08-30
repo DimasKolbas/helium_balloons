@@ -23,10 +23,25 @@
         }
     }
 
-    &__list--average {
-        margin-top: 180px;
-        margin-bottom: 180px;
+    &__list-indent {
+        @media screen and (min-width: 834px) {
+            // margin-top: 48px;
+            // margin-bottom: 108px;
+            margin-top: 124px;
+        }
 
+        @media screen and (min-width: 1440px) {
+            // margin-top: 60px;
+            // margin-bottom: 128px;
+            // margin-top: 181px;
+            margin-top: 177px;
+        }
+
+        @media screen and (min-width: 1728px) {
+            // margin-top: 56px;
+            // margin-bottom: 140px;
+            margin-top: 200px;
+        }
     }
 
     &__section--type1 {
@@ -86,7 +101,6 @@
 
     //Products title settings
     &__title {
-        margin-top: 48px;
         font-family: var(--title_font);
         font-weight: 400;
         font-size: 16px;
@@ -95,15 +109,11 @@
         text-transform: uppercase;
         color: var(--title_color);
 
-        @media screen and (min-width: 390px) {}
-
         @media screen and (min-width: 834px) {
             position: absolute;
-            margin-top: -24px;
         }
 
         @media screen and (min-width: 1440px) {
-            margin-top: -64px;
             font-size: 18px;
             letter-spacing: 0.9px;
         }
@@ -121,8 +131,6 @@
             height: 2px;
             background: var(--lines_color);
             border-radius: 0px 8px 8px 0px;
-
-            @media screen and (min-width: 390px) {}
 
             @media screen and (min-width: 834px) {
                 margin-top: 22px;
@@ -143,23 +151,18 @@
         }
     }
 
-    // &__title--hidden {
-    //     visibility: hidden;
-
-    //     @media screen and (min-width: 834px) {
-    //         visibility: visible;
-    //     }
-    // }
-
     //Products titles position
     &__title--type1 {
+        margin-top: 48px;
         margin-left: -66px;
 
         @media screen and (min-width: 834px) {
+            margin-top: -24px;
             margin-left: 90px;
         }
 
         @media screen and (min-width: 1440px) {
+            margin-top: -64px;
             margin-left: 162px;
         }
 
@@ -189,14 +192,17 @@
         margin-left: -94px;
 
         @media screen and (min-width: 834px) {
+            margin-top: 48px;
             margin-left: 374px;
         }
 
         @media screen and (min-width: 1440px) {
+            margin-top: 60px;
             margin-left: 562px;
         }
 
         @media screen and (min-width: 1728px) {
+            margin-top: 56px;
             margin-left: 718px;
         }
 
@@ -215,18 +221,22 @@
     }
 
     &__title--type3 {
+        margin-top: 80px;
         margin-left: 4px;
 
         @media screen and (min-width: 834px) {
-            margin-bottom: 0;
+            margin-top: 100px;
             margin-left: 108px;
+            margin-bottom: 0;
         }
 
         @media screen and (min-width: 1440px) {
+            margin-top: 128px;
             margin-left: 182px;
         }
 
         @media screen and (min-width: 1728px) {
+            margin-top: 140px;
             margin-left: 176px;
         }
 
@@ -249,14 +259,28 @@
 
     &__title--type4 {
         position: static;
-        margin-top: 140px;
-        margin-bottom: 60px;
-        font-size: 20px;
+
+        @media screen and (min-width: 834px) {}
+
+        @media screen and (min-width: 1440px) {}
+
+        @media screen and (min-width: 1728px) {
+            margin-top: 140px;
+            margin-bottom: 60px;
+            font-size: 20px;
+        }
 
         &::before {
-            margin-top: 30px;
-            margin-left: -92px;
             border-radius: 8px;
+
+            @media screen and (min-width: 834px) {}
+
+            @media screen and (min-width: 1440px) {}
+
+            @media screen and (min-width: 1728px) {
+                margin-top: 30px;
+                margin-left: -92px;
+            }
         }
     }
 
@@ -265,10 +289,22 @@
         margin-top: 140px;
         font-size: 20px;
 
+        @media screen and (min-width: 834px) {}
+
+        @media screen and (min-width: 1440px) {}
+
+        @media screen and (min-width: 1728px) {}
+
         &::before {
             margin-top: 30px;
             margin-left: -212px;
             border-radius: 8px;
+
+            @media screen and (min-width: 834px) {}
+
+            @media screen and (min-width: 1440px) {}
+
+            @media screen and (min-width: 1728px) {}
         }
     }
 

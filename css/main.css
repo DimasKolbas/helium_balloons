@@ -1065,9 +1065,20 @@ body {
     display: flex;
   }
 }
-.products__list--average {
-  margin-top: 180px;
-  margin-bottom: 180px;
+@media screen and (min-width: 834px) {
+  .products__list-indent {
+    margin-top: 124px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .products__list-indent {
+    margin-top: 177px;
+  }
+}
+@media screen and (min-width: 1728px) {
+  .products__list-indent {
+    margin-top: 200px;
+  }
 }
 .products__section--type1 {
   margin-top: 50px;
@@ -1128,7 +1139,6 @@ body {
   }
 }
 .products__title {
-  margin-top: 48px;
   font-family: var(--title_font);
   font-weight: 400;
   font-size: 16px;
@@ -1140,12 +1150,10 @@ body {
 @media screen and (min-width: 834px) {
   .products__title {
     position: absolute;
-    margin-top: -24px;
   }
 }
 @media screen and (min-width: 1440px) {
   .products__title {
-    margin-top: -64px;
     font-size: 18px;
     letter-spacing: 0.9px;
   }
@@ -1186,15 +1194,18 @@ body {
   }
 }
 .products__title--type1 {
+  margin-top: 48px;
   margin-left: -66px;
 }
 @media screen and (min-width: 834px) {
   .products__title--type1 {
+    margin-top: -24px;
     margin-left: 90px;
   }
 }
 @media screen and (min-width: 1440px) {
   .products__title--type1 {
+    margin-top: -64px;
     margin-left: 162px;
   }
 }
@@ -1227,16 +1238,19 @@ body {
 }
 @media screen and (min-width: 834px) {
   .products__title--type2 {
+    margin-top: 48px;
     margin-left: 374px;
   }
 }
 @media screen and (min-width: 1440px) {
   .products__title--type2 {
+    margin-top: 60px;
     margin-left: 562px;
   }
 }
 @media screen and (min-width: 1728px) {
   .products__title--type2 {
+    margin-top: 56px;
     margin-left: 718px;
   }
 }
@@ -1250,21 +1264,25 @@ body {
   }
 }
 .products__title--type3 {
+  margin-top: 80px;
   margin-left: 4px;
 }
 @media screen and (min-width: 834px) {
   .products__title--type3 {
-    margin-bottom: 0;
+    margin-top: 100px;
     margin-left: 108px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1440px) {
   .products__title--type3 {
+    margin-top: 128px;
     margin-left: 182px;
   }
 }
 @media screen and (min-width: 1728px) {
   .products__title--type3 {
+    margin-top: 140px;
     margin-left: 176px;
   }
 }
@@ -1288,14 +1306,22 @@ body {
 }
 .products__title--type4 {
   position: static;
-  margin-top: 140px;
-  margin-bottom: 60px;
-  font-size: 20px;
+}
+@media screen and (min-width: 1728px) {
+  .products__title--type4 {
+    margin-top: 140px;
+    margin-bottom: 60px;
+    font-size: 20px;
+  }
 }
 .products__title--type4::before {
-  margin-top: 30px;
-  margin-left: -92px;
   border-radius: 8px;
+}
+@media screen and (min-width: 1728px) {
+  .products__title--type4::before {
+    margin-top: 30px;
+    margin-left: -92px;
+  }
 }
 .products__title--type5 {
   position: static;
@@ -1479,6 +1505,7 @@ body {
 .card__image {
   min-width: 296px;
   height: 364px;
+  background: lightgray -21.856px 0px/122.973% 100% no-repeat;
   box-shadow: 1px 1px 8px 0px rgba(21, 16, 15, 0.5);
   border-radius: 8px;
 }
@@ -1514,31 +1541,33 @@ body {
 .card__title {
   position: relative;
   margin: 0;
-  background: linear-gradient(93.39deg, rgba(240, 243, 246, 0.7) 0%, rgba(226, 231, 235, 0) 100%);
-  box-shadow: inset 0px 1px 1px rgba(21, 16, 15, 0.4);
-  -webkit-backdrop-filter: blur(7.5px);
-          backdrop-filter: blur(7.5px);
-  border-radius: 0px 0px 8px 8px;
+  width: 296px;
+  height: 72px;
+  bottom: 72px;
+  padding: 24px 20px;
   font-family: var(--title_font);
   font-size: 16px;
   line-height: 150%;
+  font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: #FFFFFF;
+  background: linear-gradient(135deg, rgba(240, 243, 246, 0.7) 0%, rgba(226, 231, 235, 0) 100%);
+  box-shadow: 0px 1px 1px 0px rgba(21, 16, 15, 0.4) inset;
+  -webkit-backdrop-filter: blur(7.5px);
+          backdrop-filter: blur(7.5px);
+  border-radius: 0px 0px 8px 8px;
 }
 @media screen and (min-width: 834px) {
   .card__title {
     width: 200px;
-    height: 72px;
     padding: 24px 8px;
-    bottom: 72px;
     font-size: 13px;
   }
 }
 @media screen and (min-width: 1440px) {
   .card__title {
     width: 296px;
-    height: 72px;
     padding: 24px 20px;
     font-size: 16px;
   }
@@ -1551,6 +1580,9 @@ body {
     padding: 28px 26px;
     font-size: 20px;
   }
+}
+.card__title--type2 {
+  padding: 12px 20px;
 }
 @media screen and (min-width: 834px) {
   .card__title--type2 {
