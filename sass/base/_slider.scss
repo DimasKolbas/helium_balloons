@@ -1,0 +1,40 @@
+    .slider-container {
+        position: relative;
+        overflow: hidden;
+        outline: 2px solid tomato;
+    }
+
+    .slider {
+        display: flex;
+        width: 304px;
+        transition: transform 0.3s ease-in-out;
+
+    }
+
+    .slide {
+        flex: 0 0 100%;
+
+        &:nth-child(even) {
+            margin-left: 22px;
+            margin-right: 22px;
+        }
+
+        &:first-child {
+            margin-left: 11px;
+        }
+    }
+
+    .prev,
+    .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .prev {
+        left: 10px;
+    }
+
+    .next {
+        right: 10px;
+    }
