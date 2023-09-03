@@ -1,23 +1,15 @@
-.about-section {
-    @media screen and (min-width: 834px) {}
-
-    @media screen and (min-width: 1440px) {}
-
-    @media screen and (min-width: 1728px) {}
-}
-
 .about {
+
     &__image {
+        position: absolute;
         background-size: cover;
 
         @media screen and (min-width: 834px) {
-            margin-top: -24px;
             width: 541px;
             height: 724px;
         }
 
         @media screen and (min-width: 1440px) {
-            margin-top: -64px;
             width: 728px;
             height: 972px;
         }
@@ -30,6 +22,8 @@
 
     &__image--left {
         @media screen and (min-width: 834px) {
+            left: 40px;
+            margin-top: -24px;
             background-image: url("/images/index/jpg/about-left_tab.jpg");
 
             @media (min-device-pixel-ratio: 2) and (min-width: 834px),
@@ -40,7 +34,14 @@
             }
         }
 
+        @media screen and (min-width: 1140px) {
+            left: 160px;
+            margin-top: -28px;
+        }
+
         @media screen and (min-width: 1440px) {
+            left: 86px;
+            margin-top: -64px;
             background-image: url("/images/index/jpg/about-left_desk.jpg");
 
             @media (min-device-pixel-ratio: 2) and (min-width: 1440px),
@@ -52,6 +53,7 @@
         }
 
         @media screen and (min-width: 1728px) {
+            left: 80px;
             background-image: url("/images/index/jpg/about-left_mac.jpg");
 
             @media (min-device-pixel-ratio: 2) and (min-width: 1728px),
@@ -63,57 +65,196 @@
         }
     }
 
-    &__list {
-        @media screen and (min-width: 834px) {}
-
-        @media screen and (min-width: 1440px) {}
-
-        @media screen and (min-width: 1728px) {}
-    }
-
     &__list-item {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        background-color: #FFF;
+        z-index: 1;
 
-        @media screen and (min-width: 834px) {}
+        @media screen and (min-width: 834px) {
+            width: 424px;
+            height: 232px;
+        }
 
-        @media screen and (min-width: 1440px) {}
+        @media screen and (min-width: 1440px) {
+            width: 528px;
+            height: 280px;
+        }
 
         @media screen and (min-width: 1728px) {
-            justify-content: center;
-            display: flex;
-            align-items: center;
             width: 576px;
             height: 364px;
-            padding: 8px;
-            border-radius: 30px;
-            border: 4px solid #F0F3F6;
-            background: #FFF;
+        }
+    }
+
+    &__item--1 {
+        border: 4px solid var(--grey_color);
+
+        @media screen and (min-width: 834px) {
+            right: 40px;
+            margin-top: -24px;
+        }
+
+        @media screen and (min-width: 1140px) {
+            right: 140px;
+            margin-top: -4px;
+        }
+
+        @media screen and (min-width: 1440px) {
+            right: 86px;
+            margin-top: 16px;
+        }
+
+        @media screen and (min-width: 1728px) {
+            right: 80px;
+        }
+    }
+
+    &__item--2 {
+        border: 4px solid var(--rose_color);
+
+        @media screen and (min-width: 834px) {
+            right: 40px;
+            margin-top: 340px;
+        }
+
+        @media screen and (min-width: 1140px) {
+            right: 288px;
+            margin-top: 360px;
+        }
+
+        @media screen and (min-width: 1440px) {
+            right: 300px;
+            margin-top: 380px;
+        }
+
+        @media screen and (min-width: 1728px) {
+            right: 346px;
+            margin-top: 464px;
+        }
+    }
+
+    &__item--3 {
+        border: 4px solid var(--blue_color);
+
+        @media screen and (min-width: 834px) {
+            left: 40px;
+            margin-top: 712px;
+        }
+
+        @media screen and (min-width: 1140px) {
+            left: 200px;
+            margin-top: 800px;
+        }
+
+        @media screen and (min-width: 1440px) {
+            left: 86px;
+            margin-top: 1000px;
+        }
+
+        @media screen and (min-width: 1728px) {
+            left: 112px;
+            margin-top: 1228px;
+        }
+    }
+
+    &__item--4 {
+        border: 4px solid var(--orange_color);
+
+        @media screen and (min-width: 834px) {
+            left: 40px;
+            margin-top: 1182px;
+        }
+
+        @media screen and (min-width: 1140px) {
+            left: 312px;
+            margin-top: 1192px;
+        }
+
+        @media screen and (min-width: 1440px) {
+            left: 300px;
+            margin-top: 1364px;
+        }
+
+        @media screen and (min-width: 1728px) {
+            left: 410px;
+            margin-top: 1676px;
         }
     }
 
     &__item-area {
-        @media screen and (min-width: 834px) {}
+        padding: 11px;
+        border-radius: 30px;
 
-        @media screen and (min-width: 1440px) {}
+        @media screen and (min-width: 834px) {
+            width: 408px;
+            height: 216px;
+        }
+
+        @media screen and (min-width: 1440px) {
+            width: 512px;
+            height: 264px;
+            padding: 12px;
+        }
 
         @media screen and (min-width: 1728px) {
             width: 560px;
             height: 348px;
-            padding: 12px;
-            border-radius: 30px;
-            background: #F0F3F6;
         }
     }
 
-    &__item-text {
-        @media screen and (min-width: 834px) {}
+    &__area--1 {
+        background-color: var(--grey_color);
+    }
 
-        @media screen and (min-width: 1440px) {}
+    &__area--2 {
+        background-color: var(--rose_color);
+    }
+
+    &__area--3 {
+        background-color: var(--blue_color);
+    }
+
+    &__area--4 {
+        background-color: var(--orange_color);
+
+        @media screen and (min-width: 834px) {
+            padding-left: 32px;
+        }
+
+        @media screen and (min-width: 1440px) {
+            padding-left: 38px;
+        }
 
         @media screen and (min-width: 1728px) {}
     }
 
+    &__item-text {
+        text-align: left;
+        font-weight: 300;
+        color: var(--text_color);
+        font-family: var(--text_font);
+
+        @media screen and (min-width: 834px) {
+            font-size: 16px;
+        }
+
+        @media screen and (min-width: 1440px) {
+            font-size: 20px;
+        }
+
+        @media screen and (min-width: 1728px) {
+            font-size: 24px;
+        }
+    }
+
     &__image--right {
         @media screen and (min-width: 834px) {
+            right: 40px;
+            margin-top: 694px;
             background-image: url("/images/index/jpg/about-right_tab.jpg");
 
             @media (min-device-pixel-ratio: 2) and (min-width: 834px),
@@ -124,7 +265,14 @@
             }
         }
 
+        @media screen and (min-width: 1140px) {
+            right: 140px;
+            margin-top: 696px;
+        }
+
         @media screen and (min-width: 1440px) {
+            right: 86px;
+            margin-top: 656px;
             background-image: url("/images/index/jpg/about-right_desk.jpg");
 
             @media (min-device-pixel-ratio: 2) and (min-width: 1440px),
@@ -136,6 +284,8 @@
         }
 
         @media screen and (min-width: 1728px) {
+            right: 80px;
+            margin-top: 804px;
             background-image: url("/images/index/jpg/about-right_mac.jpg");
 
             @media (min-device-pixel-ratio: 2) and (min-width: 1728px),
@@ -146,3 +296,4 @@
             }
         }
     }
+}

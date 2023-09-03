@@ -1,9 +1,11 @@
 .caption {
+    position: relative;
     margin: 0 auto;
     padding-top: 114px;
     width: auto;
     height: 156px;
     background-image: url("/images/index/png/caption-background_mob.png");
+    z-index: 1;
 
     @media screen and (min-width: 390px) {
         margin-left: -28px;
