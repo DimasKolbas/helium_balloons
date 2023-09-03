@@ -27,6 +27,8 @@ img {
   display: block;
   min-width: 100%;
   height: auto;
+  border: none;
+  outline: none;
 }
 
 .link {
@@ -1768,8 +1770,22 @@ body {
     height: 1200px;
   }
 }
+.about__mob-image {
+  width: 334px;
+  height: 264px;
+  margin-top: 20px;
+}
+@media screen and (min-width: 834px) {
+  .about__mob-image {
+    display: none;
+  }
+}
+.about__image--left {
+  display: none;
+}
 @media screen and (min-width: 834px) {
   .about__image--left {
+    display: block;
     left: 40px;
     margin-top: -24px;
     background-image: url("/images/index/jpg/about-left_tab.jpg");
@@ -1810,16 +1826,18 @@ body {
   }
 }
 .about__list-item {
-  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 334px;
+  height: 280px;
   border-radius: 30px;
   background-color: #FFF;
   z-index: 1;
 }
 @media screen and (min-width: 834px) {
   .about__list-item {
+    position: absolute;
     width: 424px;
     height: 232px;
   }
@@ -1837,12 +1855,14 @@ body {
   }
 }
 .about__item--1 {
-  border: 4px solid var(--grey_color);
+  display: none;
 }
 @media screen and (min-width: 834px) {
   .about__item--1 {
+    display: flex;
     right: 40px;
     margin-top: -24px;
+    border: 4px solid var(--grey_color);
   }
 }
 @media screen and (min-width: 1140px) {
@@ -1863,6 +1883,7 @@ body {
   }
 }
 .about__item--2 {
+  margin-top: 48px;
   border: 4px solid var(--rose_color);
 }
 @media screen and (min-width: 834px) {
@@ -1890,6 +1911,7 @@ body {
   }
 }
 .about__item--3 {
+  margin-top: 20px;
   border: 4px solid var(--blue_color);
 }
 @media screen and (min-width: 834px) {
@@ -1917,12 +1939,14 @@ body {
   }
 }
 .about__item--4 {
-  border: 4px solid var(--orange_color);
+  display: none;
 }
 @media screen and (min-width: 834px) {
   .about__item--4 {
+    display: flex;
     left: 40px;
     margin-top: 1182px;
+    border: 4px solid var(--orange_color);
   }
 }
 @media screen and (min-width: 1140px) {
@@ -1944,6 +1968,8 @@ body {
   }
 }
 .about__item-area {
+  width: 318px;
+  height: 264px;
   padding: 11px;
   border-radius: 30px;
 }
@@ -1991,12 +2017,14 @@ body {
 .about__item-text {
   text-align: left;
   font-weight: 300;
+  line-height: 140%;
   color: var(--text_color);
   font-family: var(--text_font);
 }
 @media screen and (min-width: 834px) {
   .about__item-text {
     font-size: 16px;
+    line-height: 150%;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -2009,8 +2037,12 @@ body {
     font-size: 24px;
   }
 }
+.about__image--right {
+  display: none;
+}
 @media screen and (min-width: 834px) {
   .about__image--right {
+    display: block;
     right: 40px;
     margin-top: 694px;
     background-image: url("/images/index/jpg/about-right_tab.jpg");
