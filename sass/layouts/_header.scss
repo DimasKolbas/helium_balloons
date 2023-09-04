@@ -144,7 +144,7 @@
         @media screen and (min-width: 834px) {
             font-family: var(--title_font);
             font-weight: 700;
-            font-size: 16px;
+            font-size: 14px;
             line-height: 100%;
         }
 
@@ -161,8 +161,7 @@
 
 
     &_contacts-icon {
-        margin-top: 16px;
-        margin-bottom: 12px;
+        margin-top: 14px;
         width: 44px;
         height: 44px;
         fill: var(--first-accent_color);
@@ -173,6 +172,11 @@
             width: 48px;
             fill-opacity: 1;
             transition: fill-opacity 500ms linear;
+        }
+
+        @media screen and (min-width: 834px) {
+            margin-top: 12px;
+            margin-bottom: 8px;
         }
 
         @media screen and (min-width: 1440px) {
@@ -203,14 +207,16 @@
 
         @media screen and (min-width: 834px) {
             display: block;
-            padding: 16px 0 4px 0;
+            margin-top: 14px;
+            margin-bottom: 4px;
         }
 
-        @media screen and (min-width: 1440px) {}
-
-        @media screen and (min-width: 1728px) {
-            padding: 28px 0 4px 0;
+        @media screen and (min-width: 1440px) {
+            margin-top: 20px;
+            margin-bottom: 4px;
         }
+
+        @media screen and (min-width: 1728px) {}
     }
 
     &_contacts-social {

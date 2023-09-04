@@ -1,4 +1,4 @@
-//basic-settings
+// basic-settings
 @import 'base/basic-settings';
 @import 'base/body';
 @import 'base/container';
@@ -8,9 +8,10 @@
 @import 'utils/visually-hidden';
 @import 'utils/text-hidden';
 @import 'components/caption';
-@import 'base/slider';
+@import 'components/colors';
+// @import 'base/slider';
 
-//Header section
+// Header section
 @import 'layouts/header';
 @import 'components/navigation';
 @import 'components/carousel';
@@ -22,7 +23,10 @@
 @import 'layouts/products';
 @import 'components/card';
 
-//About section
+// About section
 @import 'layouts/about';
+
+// Why section
+@import 'layouts/why';
 
 // Footer-section

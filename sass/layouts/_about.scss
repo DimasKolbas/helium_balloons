@@ -229,21 +229,7 @@
         }
     }
 
-    &__area--1 {
-        background-color: var(--grey_color);
-    }
-
-    &__area--2 {
-        background-color: var(--rose_color);
-    }
-
-    &__area--3 {
-        background-color: var(--blue_color);
-    }
-
-    &__area--4 {
-        background-color: var(--orange_color);
-
+    &__area-special {
         @media screen and (min-width: 834px) {
             padding-left: 32px;
         }
@@ -251,8 +237,6 @@
         @media screen and (min-width: 1440px) {
             padding-left: 38px;
         }
-
-        @media screen and (min-width: 1728px) {}
     }
 
     &__item-text {

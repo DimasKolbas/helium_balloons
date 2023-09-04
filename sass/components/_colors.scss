@@ -1,0 +1,17 @@
+.color {
+    &__grey {
+        background-color: var(--grey_color);
+    }
+
+    &__rose {
+        background-color: var(--rose_color);
+    }
+
+    &__blue {
+        background-color: var(--blue_color);
+    }
+
+    &__orange {
+        background-color: var(--orange_color);
+    }
+}
