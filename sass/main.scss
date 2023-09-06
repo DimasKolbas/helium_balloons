@@ -8,7 +8,6 @@
 @import 'utils/visually-hidden';
 @import 'utils/text-hidden';
 @import 'components/caption';
-@import 'components/colors';
 // @import 'base/slider';
 
 // Header section
@@ -28,5 +27,9 @@
 
 // Why section
 @import 'layouts/why';
+@import 'components/colors';
+
+//Photo gallery section
+@import 'layouts/photo-gallery';
 
 // Footer-section
