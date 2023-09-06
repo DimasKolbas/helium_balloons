@@ -2275,7 +2275,7 @@ body {
   background-size: cover;
   border-radius: 50%;
   box-shadow: 0px 4px 60px 0px rgba(21, 16, 15, 0.25);
-  background-image: url("/images/index/png/why_central-image_mac.png");
+  background-image: url("/images/index/png/why_central-image_mob.png");
 }
 @media screen and (min-width: 834px) {
   .why__central-image {
@@ -2283,6 +2283,7 @@ body {
     left: 268px;
     width: 260px;
     height: 260px;
+    background-image: url("/images/index/png/why_central-image_tab.png");
   }
 }
 @media screen and (min-width: 1440px) {
@@ -2291,6 +2292,7 @@ body {
     left: 506px;
     width: 376px;
     height: 376px;
+    background-image: url("/images/index/png/why_central-image_desk.png");
   }
 }
 @media screen and (min-width: 1728px) {
@@ -2299,6 +2301,7 @@ body {
     left: 624px;
     width: 480px;
     height: 480px;
+    background-image: url("/images/index/png/why_central-image_mac.png");
   }
 }
 .why__image-list {
