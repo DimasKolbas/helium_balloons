@@ -2433,6 +2433,9 @@ body {
   }
 }
 
+.photo-gallery {
+  outline: 1px solid tomato;
+}
 .photo-gallery__caption {
   margin-left: 0;
 }
@@ -2456,22 +2459,7 @@ body {
   height: 1092px;
   background-image: url("/images/index/png/gallery_clouds_mob.png");
   z-index: -1;
-  animation: swing 20s linear infinite;
-  /* Установим линейную анимацию и 5 секунд длительности */
-}
-@keyframes swing {
-  0%, 100% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(-20px);
-  }
-  50% {
-    transform: translateX(20px);
-  }
-  75% {
-    transform: translateX(-10px);
-  }
+  outline: 1px solid tomato;
 }
 @media screen and (min-width: 834px) {
   .photo-gallery__clouds {
@@ -2499,19 +2487,9 @@ body {
 .photo-gallery__balloons {
   position: absolute;
   margin-top: -1860px;
-  margin-left: -33px;
+  margin-left: -816px;
   width: 1600px;
   height: 1860px;
-  background-image: url("/images/index/png/gallery_balloons_mac.png");
-  animation: fly 15s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
-}
-@keyframes fly {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(50px);
-  }
 }
 .photo-gallery__item {
   position: absolute;

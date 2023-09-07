@@ -16,7 +16,7 @@
 
 .photo-gallery {
     // position: relative;
-    // outline: 1px solid tomato;
+    outline: 1px solid tomato;
     // height: inherit;
 
     &__caption {
@@ -41,31 +41,29 @@
         height: 1092px;
         background-image: url('/images/index/png/gallery_clouds_mob.png');
         z-index: -1;
-        // outline: 1px solid tomato;
+        outline: 1px solid tomato;
 
         // Облака качаются влево-вправо
-        animation: swing 20s linear infinite;
-        /* Установим линейную анимацию и 5 секунд длительности */
+        // animation: swing 20s linear infinite;
+        // @keyframes swing {
 
-        @keyframes swing {
+        //     0%,
+        //     100% {
+        //         transform: translateX(0);
+        //     }
 
-            0%,
-            100% {
-                transform: translateX(0);
-            }
+        //     25% {
+        //         transform: translateX(-20px);
+        //     }
 
-            25% {
-                transform: translateX(-20px);
-            }
+        //     50% {
+        //         transform: translateX(20px);
+        //     }
 
-            50% {
-                transform: translateX(20px);
-            }
-
-            75% {
-                transform: translateX(-10px);
-            }
-        }
+        //     75% {
+        //         transform: translateX(-10px);
+        //     }
+        // }
 
         @media screen and (min-width: 834px) {
             margin-top: -24px;
@@ -91,55 +89,29 @@
     &__balloons {
         position: absolute;
         margin-top: -1860px;
-        margin-left: -33px;
+        margin-left: -816px;
         width: 1600px;
         height: 1860px;
-        background-image: url('/images/index/png/gallery_balloons_mac.png');
-
-        // animation: swing 5s ease infinite;
-        // animation: fly 5s ease infinite;
+        // background-image: url('/images/index/png/gallery_balloons_mac.png');
+        // animation: fly 15s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
 
         // @keyframes fly {
-        //     0% {
+
+        //     0%,
+        //     100% {
         //         transform: translateY(0);
         //     }
 
-        //     100% {
+        //     50% {
         //         transform: translateY(50px);
         //     }
         // }
-
-        animation: fly 15s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
-
-        @keyframes fly {
-
-            0%,
-            100% {
-                transform: translateY(0);
-            }
-
-            50% {
-                transform: translateY(50px);
-            }
-        }
     }
 
     // &__list {}
 
     &__item {
         position: absolute;
-        // animation: swing 20s ease infinite;
-
-        // @keyframes fly {
-        //     0% {
-        //         transform: translateY(0);
-        //     }
-
-        //     100% {
-        //         transform: translateY(50px);
-        //     }
-        // }
-
 
         &--1 {
             top: 0px;
