@@ -15,10 +15,6 @@
 }
 
 .photo-gallery {
-    // position: relative;
-    outline: 1px solid tomato;
-    // height: inherit;
-
     &__caption {
         margin-left: 0;
 
@@ -36,34 +32,33 @@
     }
 
     &__clouds {
-        // position: relative;
-        width: 390px;
-        height: 1092px;
+        margin-top: 48px;
+        margin-left: -48px;
+        width: 484px;
+        height: 1104px;
         background-image: url('/images/index/png/gallery_clouds_mob.png');
-        z-index: -1;
-        outline: 1px solid tomato;
-
         // Облака качаются влево-вправо
-        // animation: swing 20s linear infinite;
-        // @keyframes swing {
+        animation: swing 20s linear infinite;
 
-        //     0%,
-        //     100% {
-        //         transform: translateX(0);
-        //     }
+        @keyframes swing {
 
-        //     25% {
-        //         transform: translateX(-20px);
-        //     }
+            0%,
+            100% {
+                transform: translateX(0);
+            }
 
-        //     50% {
-        //         transform: translateX(20px);
-        //     }
+            25% {
+                transform: translateX(-20px);
+            }
 
-        //     75% {
-        //         transform: translateX(-10px);
-        //     }
-        // }
+            50% {
+                transform: translateX(20px);
+            }
+
+            75% {
+                transform: translateX(-10px);
+            }
+        }
 
         @media screen and (min-width: 834px) {
             margin-top: -24px;
@@ -88,438 +83,45 @@
 
     &__balloons {
         position: absolute;
-        margin-top: -1860px;
-        margin-left: -816px;
-        width: 1600px;
-        height: 1860px;
-        // background-image: url('/images/index/png/gallery_balloons_mac.png');
-        // animation: fly 15s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+        margin-top: -1140px;
+        margin-left: -196px;
+        width: 390px;
+        height: 1092px;
+        z-index: -1;
 
-        // @keyframes fly {
+        @media screen and (min-width: 834px) {
+            margin-top: -1056px;
+            margin-left: -360px;
+            width: 716px;
+            height: 1108px;
+            animation: fly 15s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
 
-        //     0%,
-        //     100% {
-        //         transform: translateY(0);
-        //     }
+            @keyframes fly {
 
-        //     50% {
-        //         transform: translateY(50px);
-        //     }
-        // }
-    }
+                0%,
+                100% {
+                    transform: translateY(0);
+                }
 
-    // &__list {}
-
-    &__item {
-        position: absolute;
-
-        &--1 {
-            top: 0px;
-            left: 282px;
-            width: 392px;
-            height: 536px;
-            stroke-width: 4px;
-            stroke: #C1FAF6;
-            background-image: url('');
-
-            &::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                background-repeat: no-repeat;
-                width: 100%;
-                height: 100%;
-                background-image: url('');
-
-                @media screen and (min-width: 834px) {}
-
-                @media screen and (min-width: 1440px) {}
-
-                @media screen and (min-width: 1728px) {}
-            }
-
-            @media screen and (min-width: 834px) {}
-
-            @media screen and (min-width: 1440px) {}
-
-            @media screen and (min-width: 1728px) {
-                background-image: url('/images/index/png/gallery_balloon1_mac.png');
+                50% {
+                    transform: translateY(50px);
+                }
             }
         }
 
-        &--2 {
-            top: 0px;
-            left: 1072px;
-            width: 404px;
-            height: 536px;
-            background-image: url('');
+        @media screen and (min-width: 1440px) {
+            margin-top: -1804px;
+            margin-left: -634px;
+            width: 1268px;
+            height: 1804px;
 
-            &::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                background-size: contain;
-                background-repeat: no-repeat;
-                width: 100%;
-                height: 100%;
-                background-image: url('');
-
-                @media screen and (min-width: 834px) {}
-
-                @media screen and (min-width: 1440px) {}
-
-                @media screen and (min-width: 1728px) {}
-            }
-
-            @media screen and (min-width: 834px) {}
-
-            @media screen and (min-width: 1440px) {}
-
-            @media screen and (min-width: 1728px) {
-                background-image: url('/images/index/png/gallery_balloon2_mac.png');
-            }
         }
 
-        &--3 {
-            top: 292px;
-            left: -36px;
-            width: 398px;
-            height: 498px;
-            background-image: url('');
-
-            &::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                background-size: contain;
-                background-repeat: no-repeat;
-                width: 100%;
-                height: 100%;
-                background-image: url('');
-
-                @media screen and (min-width: 834px) {}
-
-                @media screen and (min-width: 1440px) {}
-
-                @media screen and (min-width: 1728px) {}
-            }
-
-            @media screen and (min-width: 834px) {}
-
-            @media screen and (min-width: 1440px) {}
-
-            @media screen and (min-width: 1728px) {
-                background-image: url('/images/index/png/gallery_balloon3_mac.png');
-            }
-        }
-
-        &--4 {
-            top: 298px;
-            left: 772px;
-            width: 316px;
-            height: 408px;
-            background-image: url('');
-
-            &::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                background-size: contain;
-                background-repeat: no-repeat;
-                width: 100%;
-                height: 100%;
-                background-image: url('');
-
-                @media screen and (min-width: 834px) {}
-
-                @media screen and (min-width: 1440px) {}
-
-                @media screen and (min-width: 1728px) {}
-            }
-
-            @media screen and (min-width: 834px) {}
-
-            @media screen and (min-width: 1440px) {}
-
-            @media screen and (min-width: 1728px) {
-                background-image: url('/images/index/png/gallery_balloon4_mac.png');
-            }
-        }
-
-        &--5 {
-            top: 484px;
-            left: 1140px;
-            width: 428px;
-            height: 564px;
-            background-image: url('');
-
-            &::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                background-size: contain;
-                background-repeat: no-repeat;
-                width: 100%;
-                height: 100%;
-                background-image: url('');
-
-                @media screen and (min-width: 834px) {}
-
-                @media screen and (min-width: 1440px) {}
-
-                @media screen and (min-width: 1728px) {}
-            }
-
-            @media screen and (min-width: 834px) {}
-
-            @media screen and (min-width: 1440px) {}
-
-            @media screen and (min-width: 1728px) {
-                background-image: url('/images/index/png/gallery_balloon5_mac.png');
-            }
-        }
-
-        &--6 {
-            top: 587px;
-            left: 384px;
-            width: 336px;
-            height: 448px;
-            background-image: url('');
-
-            &::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                background-size: contain;
-                background-repeat: no-repeat;
-                width: 100%;
-                height: 100%;
-                background-image: url('');
-
-                @media screen and (min-width: 834px) {}
-
-                @media screen and (min-width: 1440px) {}
-
-                @media screen and (min-width: 1728px) {}
-            }
-
-            @media screen and (min-width: 834px) {}
-
-            @media screen and (min-width: 1440px) {}
-
-            @media screen and (min-width: 1728px) {
-                background-image: url('/images/index/png/gallery_balloon6_mac.png');
-            }
-        }
-
-        &--7 {
-            top: 701px;
-            left: 774px;
-            width: 338px;
-            height: 452px;
-            background-image: url('');
-
-            &::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                background-size: contain;
-                background-repeat: no-repeat;
-                width: 100%;
-                height: 100%;
-                background-image: url('');
-
-                @media screen and (min-width: 834px) {}
-
-                @media screen and (min-width: 1440px) {}
-
-                @media screen and (min-width: 1728px) {}
-            }
-
-            @media screen and (min-width: 834px) {}
-
-            @media screen and (min-width: 1440px) {}
-
-            @media screen and (min-width: 1728px) {
-                background-image: url('/images/index/png/gallery_balloon7_mac.png');
-            }
-        }
-
-        &--8 {
-            top: 864px;
-            left: 64px;
-            width: 408px;
-            height: 548px;
-            background-image: url('');
-
-            &::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                background-size: contain;
-                background-repeat: no-repeat;
-                width: 100%;
-                height: 100%;
-                background-image: url('');
-
-                @media screen and (min-width: 834px) {}
-
-                @media screen and (min-width: 1440px) {}
-
-                @media screen and (min-width: 1728px) {}
-            }
-
-            @media screen and (min-width: 834px) {}
-
-            @media screen and (min-width: 1440px) {}
-
-            @media screen and (min-width: 1728px) {
-                background-image: url('/images/index/png/gallery_balloon8_mac.png');
-            }
-        }
-
-        &--9 {
-            top: 1015px;
-            left: 560px;
-            width: 332px;
-            height: 428px;
-            background-image: url('');
-
-            &::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                background-size: contain;
-                background-repeat: no-repeat;
-                width: 100%;
-                height: 100%;
-                background-image: url('');
-
-                @media screen and (min-width: 834px) {}
-
-                @media screen and (min-width: 1440px) {}
-
-                @media screen and (min-width: 1728px) {}
-            }
-
-            @media screen and (min-width: 834px) {}
-
-            @media screen and (min-width: 1440px) {}
-
-            @media screen and (min-width: 1728px) {
-                background-image: url('/images/index/png/gallery_balloon9_mac.png');
-            }
-        }
-
-        &--10 {
-            top: 1028px;
-            left: 1122px;
-            width: 438px;
-            height: 564px;
-            background-image: url('');
-
-            &::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                background-size: contain;
-                background-repeat: no-repeat;
-                width: 100%;
-                height: 100%;
-                background-image: url('');
-
-                @media screen and (min-width: 834px) {}
-
-                @media screen and (min-width: 1440px) {}
-
-                @media screen and (min-width: 1728px) {}
-            }
-
-            @media screen and (min-width: 834px) {}
-
-            @media screen and (min-width: 1440px) {}
-
-            @media screen and (min-width: 1728px) {
-                background-image: url('/images/index/png/gallery_balloon10_mac.png');
-            }
-        }
-
-        &--11 {
-            top: 1308px;
-            left: 292px;
-            width: 404px;
-            height: 536px;
-            background-image: url('');
-
-            &::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                background-size: contain;
-                background-repeat: no-repeat;
-                width: 100%;
-                height: 100%;
-                background-image: url('');
-
-                @media screen and (min-width: 834px) {}
-
-                @media screen and (min-width: 1440px) {}
-
-                @media screen and (min-width: 1728px) {}
-            }
-
-            @media screen and (min-width: 834px) {}
-
-            @media screen and (min-width: 1440px) {}
-
-            @media screen and (min-width: 1728px) {
-                background-image: url('/images/index/png/gallery_balloon11_mac.png');
-            }
-        }
-
-        &--12 {
-            top: 1340px;
-            left: 770px;
-            width: 396px;
-            height: 520px;
-            background-image: url('');
-
-            &::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                background-size: contain;
-                background-repeat: no-repeat;
-                width: 100%;
-                height: 100%;
-                background-image: url('');
-
-                @media screen and (min-width: 834px) {}
-
-                @media screen and (min-width: 1440px) {}
-
-                @media screen and (min-width: 1728px) {}
-            }
-
-            @media screen and (min-width: 834px) {}
-
-            @media screen and (min-width: 1440px) {}
-
-            @media screen and (min-width: 1728px) {
-                background-image: url('/images/index/png/gallery_balloon12_mac.png');
-            }
+        @media screen and (min-width: 1728px) {
+            margin-top: -1860px;
+            margin-left: -816px;
+            width: 1600px;
+            height: 1860px;
         }
     }
 }
