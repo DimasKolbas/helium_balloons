@@ -2538,10 +2538,6 @@ body {
   }
 }
 
-.faq-section {
-  outline: 1px solid green;
-}
-
 .faq__arrows-section {
   position: relative;
   margin-top: 48px;
@@ -2747,23 +2743,42 @@ body {
   width: 1300px;
   height: 605px;
   text-align: left;
-  outline: 1px solid tomato;
 }
 .faq__questions-item {
   display: flex;
   align-items: start;
   margin-bottom: 20px;
   height: 44px;
-  cursor: pointer;
-  outline: 1px solid green;
-  color: #15100F;
-  font-family: Inter;
-  font-size: 24px;
-  font-style: normal;
+  color: var(--text_color);
+  font-family: var(--text_font);
+  font-size: 20px;
   font-weight: 500;
   line-height: 100%;
 }
-.faq__questions-item:not(:last-child)::before {
+.faq__questions-item:first-child {
+  margin-left: -36px;
+  color: var(--first-accent_color);
+  font-family: var(--title_font);
+  font-size: 22px;
+}
+.faq__questions-item:first-child::before {
+  margin-left: 0px;
+}
+.faq__questions-item:not(:first-child) {
+  cursor: pointer;
+}
+.faq__questions-item:not(:first-child):active {
+  align-items: start;
+  height: 92px;
+}
+.faq__questions-item:not(:first-child):active .faq__text--hidden {
+  margin-top: 28px;
+  opacity: 1;
+}
+.faq__questions-item:active .faq__questions-text--icon {
+  opacity: 0;
+}
+.faq__questions-item::before {
   content: "";
   position: absolute;
   margin-top: 44px;
@@ -2772,16 +2787,8 @@ body {
   height: 1px;
   background: #F1D0D9;
 }
-.faq__questions-item:hover {
-  align-items: start;
-  height: 128px;
-}
-.faq__questions-item:hover::before {
-  margin-top: 128px;
-}
-.faq__questions-item:hover .faq__text--hidden {
-  margin-top: 28px;
-  opacity: 1;
+.faq__questions-item:not(:first-child):active::before {
+  margin-top: 92px;
 }
 .faq__text-group {
   display: flex;
@@ -2792,12 +2799,15 @@ body {
   right: 317px;
   width: 28px;
   height: 17px;
+  opacity: 1;
 }
 .faq__text--hidden {
-  color: #563831;
+  position: absolute;
+  width: 1228px;
+  color: var(--title_color);
   font-size: 20px;
   font-weight: 300;
-  position: absolute;
+  word-wrap: break-word;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }/*# sourceMappingURL=main.css.map */
