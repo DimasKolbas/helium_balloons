@@ -48,6 +48,10 @@
 <path fill="#fee9c8" style="fill: var(--color2, #fee9c8)" d="M77.091 0v27.12l-21.843 2.72-16.703 2.16-17.345-2.16-21.2-2.72v-27.12l38.545 5.040 38.545-5.040z"></path>
 </symbol>
 
+<symbol id="icon-bird-arrow" viewBox="0 0 53 32">
+<path fill="#cb6a84" style="fill: var(--color1, #cb6a84)" opacity="0.7" d="M8.077 1.405l18.3 18.633 18.3-18.633c1.839-1.873 4.811-1.873 6.65 0s1.839 4.898 0 6.771l-21.648 22.043c-1.839 1.873-4.811 1.873-6.65 0l-21.648-22.043c-1.839-1.873-1.839-4.898 0-6.771 1.839-1.825 4.858-1.873 6.697 0z"></path>
+</symbol>
+
 <symbol id="icon-finish" viewBox="0 0 28 32">
 <path fill="#cb6a84" style="fill: var(--color3, #cb6a84)" d="M0 0h1.377v32h-1.377v-32z"></path>
 <path fill="#cb6a84" style="fill: var(--color3, #cb6a84)" d="M26.623 0h1.377v32h-1.377v-32z"></path>
