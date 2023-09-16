@@ -2986,8 +2986,6 @@ body {
   height: 176px;
   padding: 18px;
   text-align: right;
-  display: table-cell;
-  vertical-align: middle;
 }
 .contacts__working {
   top: 450px;
