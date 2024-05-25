@@ -1,0 +1,92 @@
+.footer-section {
+    position: relative;
+    height: 340px;
+    box-shadow: inset 0 1px 4px 0 rgba(21, 16, 15, 0.25);
+    background-color: #e2e7eb;
+    margin-top: 80px;
+    padding-top: 40px;
+
+}
+
+.footer {
+    display: flex;
+    // justify-content: space-between;    
+
+    &__button {
+        height: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // padding-left: 20px;
+        box-shadow: 0 4px 4px 0 rgba(21, 16, 15, 0.25);
+        background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+        border-radius: 8px;
+        border: 0px;
+        margin-bottom: 116px;
+
+        &--1 {
+            width: 554px;
+            margin-left: 80px;
+        }
+
+        &--2 {
+            width: 500px;
+            margin-left: 37px;
+            margin-right: 37px;
+        }
+
+        &--3 {
+            width: 440px;
+        }
+
+        &--text {
+            font-family: var(--title_font);
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 100%;
+            color: var(--title_color);
+        }
+
+        &--text2 {
+            margin-left: 22px;
+            font-weight: 400;
+            font-size: 20px;
+            text-decoration: underline;
+        }
+    }
+
+    &__list {
+        position: absolute;
+        top: 136px;
+        display: flex;
+    }
+
+    &__list-item {
+        outline: 1px solid tomato;
+        // width: 52px;
+        // height: 52px;
+    }
+
+    &__list-icon {
+        width: 52px;
+        height: 52px;
+    }
+
+    &__requisites {
+        width: 1728px;
+        height: 120px;
+        padding-top: 12px;
+        background-color: white;
+        display: block;
+        width: 100%;
+        outline: 1px solid tomato;
+
+        font-family: var(--text_font);
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 130%;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: var(--text_color);
+    }
+}
